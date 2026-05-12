@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Water Damage Restoration | Dry State LLC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f8f9fa",
+                    "error": "#ba1a1a",
+                    "primary": "#00123d",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#fabd00",
+                    "on-secondary-fixed": "#410003",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-container": "#da3433",
+                    "inverse-primary": "#b3c5ff",
+                    "on-surface-variant": "#44464f",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary": "#b6171e",
+                    "on-primary-fixed-variant": "#31447b",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-variant": "#e1e3e4",
+                    "on-background": "#191c1d",
+                    "inverse-surface": "#2e3132",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e7e8e9",
+                    "secondary-fixed-dim": "#ffb3ac",
+                    "outline": "#757681",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "background": "#f8f9fa",
+                    "surface-tint": "#495c95",
+                    "tertiary-container": "#372700",
+                    "surface-container": "#edeeef",
+                    "on-secondary-container": "#fffbff",
+                    "on-primary-fixed": "#00174a",
+                    "on-primary-container": "#7c8fcb",
+                    "on-secondary-fixed-variant": "#930010",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "primary-container": "#0f265c",
+                    "on-error": "#ffffff",
+                    "tertiary": "#1e1400",
+                    "on-surface": "#191c1d",
+                    "surface-dim": "#d9dadb",
+                    "tertiary-fixed": "#ffdf9e",
+                    "outline-variant": "#c5c6d1",
+                    "on-tertiary-container": "#b78a00",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed": "#261a00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px",
+                    "base": "8px",
+                    "section-gap": "80px"
+            },
+            "fontFamily": {
+                    "h3": ["Work Sans"],
+                    "h2": ["Work Sans"],
+                    "h1": ["Work Sans"],
+                    "cta": ["Work Sans"],
+                    "label-caps": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "cta": ["18px", {"lineHeight": "1.0", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 18, 61, 0.85), rgba(0, 18, 61, 0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full h-[48px] z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm shadow-sm">
+<div class="flex justify-between items-center max-w-[1280px] mx-auto px-6 w-full h-full">
+<div class="text-xl font-black text-blue-900 uppercase tracking-wider">Dry State LLC</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-blue-900 border-b-2 border-blue-900 pb-1 font-['Work_Sans'] font-semibold tracking-tight" href="#">Services</a>
+<a class="text-slate-600 font-medium hover:text-red-600 transition-colors duration-200" href="#">About</a>
+<a class="text-slate-600 font-medium hover:text-red-600 transition-colors duration-200" href="#">Reviews</a>
+<a class="text-slate-600 font-medium hover:text-red-600 transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-900" data-icon="phone">phone</span>
+<span class="text-blue-900 font-bold hidden sm:block">24/7 Emergency Call</span>
+</div>
+</div>
+</nav>
+<main class="mt-[48px]">
+<!-- Hero Section -->
+<section class="hero-gradient min-h-[600px] flex items-center py-stack-lg">
+<div class="max-w-[1280px] mx-auto px-6 w-full text-white">
+<div class="max-w-2xl">
+<span class="bg-secondary text-white px-4 py-1 text-label-caps inline-block mb-4">24/7 EMERGENCY RESPONSE</span>
+<h1 class="font-h1 text-h1 mb-6">Expert Water Damage Restoration in Richland Hills</h1>
+<p class="font-body-lg text-body-lg mb-8 opacity-90">Immediate response to flooding, leaks, and storm damage. We arrive in 60 minutes or less to protect your property and peace of mind.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary hover:bg-secondary/90 text-white font-cta text-cta px-8 py-4 flex items-center gap-2 border-none transition-transform active:scale-95">
+<span class="material-symbols-outlined" data-icon="emergency" data-weight="fill" style="font-variation-settings: 'FILL' 1;">emergency</span>
+                        Emergency Help
+                    </button>
+<button class="border-2 border-white hover:bg-white hover:text-primary text-white font-cta text-cta px-8 py-4 transition-all">
+                        Get Free Estimate
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<div class="bg-surface-container-low py-6 border-b border-outline-variant">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-wrap justify-between items-center gap-8 opacity-70 grayscale">
+<div class="flex items-center gap-2 font-bold text-primary">IICRC CERTIFIED</div>
+<div class="flex items-center gap-2 font-bold text-primary">BBB ACCREDITED A+</div>
+<div class="flex items-center gap-2 font-bold text-primary">FULLY INSURED</div>
+<div class="flex items-center gap-2 font-bold text-primary">5-STAR RATED</div>
+</div>
+</div>
+<!-- Expert Overview -->
+<section class="py-section-gap">
+<div class="max-w-[1280px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-h2 text-h2 text-primary mb-6">Immediate Response When Every Minute Counts</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                    When water enters your home, the clock starts ticking. Our expert restoration technicians are strategically stationed across Richland Hills to ensure a rapid arrival. We don't just extract water; we stabilize your environment to prevent mold growth and structural decay.
+                </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-bold">IICRC Certified Professionals</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-bold">60-Minute Arrival Guarantee</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-bold">State-of-the-Art Extraction Gear</span>
+</li>
+</ul>
+</div>
+<div class="relative">
+<img alt="Professional Restoration Equipment" class="rounded-lg shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8LYaFFDeF7WBVUwEQqkfaC5hpUSSrEub5ckOESBHfDNXnbSqUu_GSunyBq-w8RfyBNcnlQpRgIICRc5tQn0kOgsxpqQIRO7OEgE7FrK8yfPB3zx63XkI81i3YJQQyJGCxjNU-wnsZgdN0z9sj0FIq-ipAU4fjc8zVvT-kpIVGRe2EPDXAeh3IAUOefBWfhlBwXzq-pfi9QanEvywjKKOwRb9y--tkA5NR6a7mtukHaKNK0pVQn4Fxshj_XEXVawXQjOEP_MxYTiIw"/>
+<div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded shadow-lg max-w-[240px]">
+<p class="text-h3 font-h3 leading-tight mb-2">60 MIN</p>
+<p class="text-sm opacity-80 uppercase font-bold tracking-widest">Average Response Time</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Equipment Showcase (NEW) -->
+<section class="py-section-gap bg-primary text-white">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 mb-4">Advanced Restoration Technology</h2>
+<p class="text-primary-fixed-dim max-w-2xl mx-auto">We invest in high-tech equipment to ensure the most efficient and thorough drying process possible.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-primary-container p-8 rounded-xl border border-white/10 hover:border-white/30 transition-colors">
+<div class="bg-secondary w-12 h-12 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-white" data-icon="air">air</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3">Industrial Air Movers</h3>
+<p class="text-primary-fixed-dim">High-velocity fans designed to create massive airflow across wet surfaces, accelerating evaporation from floors, walls, and carpets.</p>
+</div>
+<div class="bg-primary-container p-8 rounded-xl border border-white/10 hover:border-white/30 transition-colors">
+<div class="bg-secondary w-12 h-12 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-white" data-icon="humidity_mid">humidity_mid</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3">LGR Dehumidifiers</h3>
+<p class="text-primary-fixed-dim">Low Grain Refrigerant units that pull deep moisture from structural materials and the air, reaching humidity levels standard units can't touch.</p>
+</div>
+<div class="bg-primary-container p-8 rounded-xl border border-white/10 hover:border-white/30 transition-colors">
+<div class="bg-secondary w-12 h-12 flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-white" data-icon="thermostat">thermostat</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3">Thermal Imaging Cameras</h3>
+<p class="text-primary-fixed-dim">Non-invasive infrared sensors that detect temperature differences, revealing hidden pockets of moisture behind walls and under floors.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Signs of Water Damage -->
+<section class="bg-surface-container py-section-gap">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="font-h2 text-h2 text-primary mb-4">Signs of Water Damage</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Early detection can save thousands in restoration costs. Contact us immediately if you notice any of these red flags.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white p-8 border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="water_drop">water_drop</span>
+<h3 class="font-h3 text-h3 mb-2">Discoloration</h3>
+<p class="text-on-surface-variant">Yellow, brown, or copper-colored stains appearing on ceilings or walls.</p>
+</div>
+<div class="bg-white p-8 border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="air_freshener">air_freshener</span>
+<h3 class="font-h3 text-h3 mb-2">Musty Odors</h3>
+<p class="text-on-surface-variant">Persistent damp smells that don't go away with cleaning or ventilation.</p>
+</div>
+<div class="bg-white p-8 border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="format_paint">format_paint</span>
+<h3 class="font-h3 text-h3 mb-2">Bubbling Walls</h3>
+<p class="text-on-surface-variant">Peeling paint or wallpaper and drywall that feels soft or spongy to the touch.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Common Causes -->
+<section class="py-section-gap">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="grid grid-cols-2 gap-4">
+<img alt="Burst Pipe" class="rounded aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOuA2x7WOZsxa1di3EAwPLm1kZIJ2YlFUfbgUzswHmj93JXx228X6DrgXZrdWmSEKnoeIqsQjilwWEVmYeq6Kp1Xh8rFxNBaZPOfV2VIYM0CtN91AuLMMu4s2zYt9cAd1X_D8VKDtrYh29ySyzCKs2pqk0Lk5VIiCtDTXBh3lvSMLQ2uSqPv2lFEDGPhyS0llfQEk1EFottmIdNqWLIt-jrjcdFv3NgLxMPIbzwcKCti78MbJgpPG-xUMjJ8f8CbeuZr3kxVypqo5M"/>
+<img alt="Roof Leak" class="rounded aspect-square object-cover mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNOM7gx88VO9_m-XkZtYCzWCPF1czhQheuvjBrRiIBuQCcCX2bzwYwASyQtR7ucoELDg0w-zjz9Yk8YOQ33MMm_ZPohC6MXLSOBEwPEMHW167topd16szhliItRX48zzo4jFjQ15qZZpj_NUsTD2Zbp-iOurTFIqo-l1fmR3Q6Q5NaNZOyKgzSwuHGdCPY5AMxM82WaFkt1g_gCRt_hY8sCcWRnLhc5TtLO47X9wR9VELOB2aoGJeOVI2kRHCLIbdV01vFdECFLfSB"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-h2 text-h2 text-primary mb-6">Common Sources of Damage</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="bg-primary-container p-3 rounded h-fit">
+<span class="material-symbols-outlined text-white" data-icon="plumbing">plumbing</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-primary">Plumbing Failures</h4>
+<p class="text-on-surface-variant">Burst pipes, leaking water heaters, and overflowing toilets are the most frequent causes of indoor flooding.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="bg-primary-container p-3 rounded h-fit">
+<span class="material-symbols-outlined text-white" data-icon="home_repair_service">home_repair_service</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-primary">Roof &amp; Foundation Leaks</h4>
+<p class="text-on-surface-variant">Aging shingles or cracked foundations allow storm water to seep into living spaces during heavy rain.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="bg-primary-container p-3 rounded h-fit">
+<span class="material-symbols-outlined text-white" data-icon="kitchen">kitchen</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-primary">Appliance Malfunctions</h4>
+<p class="text-on-surface-variant">Washing machine hoses and refrigerator supply lines can fail suddenly, releasing hundreds of gallons of water.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Insurance Partnership Section (NEW) -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="font-h2 text-h2 text-primary mb-6">Hassle-Free Insurance Claims</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        We understand how stressful dealing with insurance can be during a disaster. Dry State LLC works directly with all major insurance carriers to streamline your claim process. We provide the documentation, moisture readings, and photos they need to ensure your claim is processed fairly and quickly.
+                    </p>
+<div class="flex flex-wrap gap-x-8 gap-y-4 items-center opacity-60 grayscale mt-8">
+<div class="font-black text-xl text-primary uppercase">State Farm</div>
+<div class="font-black text-xl text-primary uppercase">Allstate</div>
+<div class="font-black text-xl text-primary uppercase">Liberty Mutual</div>
+<div class="font-black text-xl text-primary uppercase">Travelers</div>
+<div class="font-black text-xl text-primary uppercase">Nationwide</div>
+</div>
+</div>
+<div class="flex-1 bg-white p-8 rounded-xl border border-outline-variant shadow-sm">
+<h4 class="font-h3 text-h3 mb-4 text-primary">Direct Billing Available</h4>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+<span>We handle all the paperwork for you</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+<span>Direct coordination with adjusters</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+<span>No upfront payments for qualified claims</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Free Inspection Offer -->
+<section class="max-w-[1280px] mx-auto px-6 my-section-gap">
+<div class="bg-primary text-white p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8 border-l-8 border-secondary">
+<div class="max-w-xl">
+<h2 class="text-h2 font-h2 mb-4">Limited Time Offer</h2>
+<p class="text-lg opacity-90">Get a <strong>Free Professional Moisture Inspection</strong> with any water restoration service. We use thermal imaging to find hidden water behind your walls.</p>
+</div>
+<button class="bg-white text-primary font-cta text-cta px-10 py-5 rounded hover:bg-surface-container-highest transition-colors whitespace-nowrap shadow-xl">
+                Claim Offer Now
+            </button>
+</div>
+</section>
+<!-- Restoration Process -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-primary mb-4">Our Proven Restoration Process</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">We follow a rigorous IICRC-certified workflow to ensure your property is restored to pre-loss condition.</p>
+</div>
+<div class="grid md:grid-cols-5 gap-4">
+<!-- Step 1 -->
+<div class="relative group">
+<div class="bg-white p-6 border-b-4 border-slate-200 group-hover:border-secondary transition-colors h-full">
+<span class="text-4xl font-black text-slate-100 absolute top-2 right-4">01</span>
+<div class="mb-4 bg-surface-container p-2 w-fit rounded">
+<span class="material-symbols-outlined text-primary" data-icon="support_agent">support_agent</span>
+</div>
+<h4 class="font-bold mb-2">Initial Contact</h4>
+<p class="text-sm text-on-surface-variant">Emergency dispatch within minutes of your call.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative group">
+<div class="bg-white p-6 border-b-4 border-slate-200 group-hover:border-secondary transition-colors h-full">
+<span class="text-4xl font-black text-slate-100 absolute top-2 right-4">02</span>
+<div class="mb-4 bg-surface-container p-2 w-fit rounded">
+<span class="material-symbols-outlined text-primary" data-icon="water_damage">water_damage</span>
+</div>
+<h4 class="font-bold mb-2">Extraction</h4>
+<p class="text-sm text-on-surface-variant">Removing standing water using heavy-duty pumps.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative group">
+<div class="bg-white p-6 border-b-4 border-slate-200 group-hover:border-secondary transition-colors h-full">
+<span class="text-4xl font-black text-slate-100 absolute top-2 right-4">03</span>
+<div class="mb-4 bg-surface-container p-2 w-fit rounded">
+<span class="material-symbols-outlined text-primary" data-icon="wind_power">wind_power</span>
+</div>
+<h4 class="font-bold mb-2">Drying</h4>
+<p class="text-sm text-on-surface-variant">Industrial air movers and dehumidifiers remove deep moisture.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative group">
+<div class="bg-white p-6 border-b-4 border-slate-200 group-hover:border-secondary transition-colors h-full">
+<span class="text-4xl font-black text-slate-100 absolute top-2 right-4">04</span>
+<div class="mb-4 bg-surface-container p-2 w-fit rounded">
+<span class="material-symbols-outlined text-primary" data-icon="sanitizer">sanitizer</span>
+</div>
+<h4 class="font-bold mb-2">Sanitizing</h4>
+<p class="text-sm text-on-surface-variant">Anti-microbial treatments to prevent mold and bacteria.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative group">
+<div class="bg-white p-6 border-b-4 border-slate-200 group-hover:border-secondary transition-colors h-full">
+<span class="text-4xl font-black text-slate-100 absolute top-2 right-4">05</span>
+<div class="mb-4 bg-surface-container p-2 w-fit rounded">
+<span class="material-symbols-outlined text-primary" data-icon="home_work">home_work</span>
+</div>
+<h4 class="font-bold mb-2">Restoration</h4>
+<p class="text-sm text-on-surface-variant">Final repairs to return your home to original beauty.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Area Map/List (NEW) -->
+<section class="py-section-gap">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="bg-surface-container rounded-xl p-8 h-[400px] flex items-center justify-center border border-outline-variant">
+<div class="text-center">
+<span class="material-symbols-outlined text-secondary text-6xl mb-4" data-icon="location_on">location_on</span>
+<h3 class="font-h3 text-h3 text-primary">North Texas Coverage</h3>
+<p class="text-on-surface-variant">Rapid response teams stationed throughout the metroplex.</p>
+</div>
+</div>
+<div>
+<h2 class="font-h2 text-h2 text-primary mb-6">Serving Richland Hills &amp; Surrounding Areas</h2>
+<p class="text-body-lg mb-8">We are a local family-owned business. Our strategic placement allows us to reach any North Texas emergency in under 60 minutes.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">Richland Hills</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">Fort Worth</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">Arlington</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">Dallas</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">North Richland Hills</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">Haltom City</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">Hurst</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-bold">Euless</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Water Damage FAQ (NEW) -->
+<section class="py-section-gap bg-surface-container">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="font-h2 text-h2 text-primary mb-4">Frequently Asked Questions</h2>
+<p class="text-on-surface-variant">Everything you need to know about the restoration process.</p>
+</div>
+<div class="space-y-4">
+<details class="group bg-white rounded-lg border border-outline-variant overflow-hidden" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-bold text-lg">How long does the drying process take?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/50">
+                        Most water-damaged properties can be fully dried within 3 to 5 days. However, the exact duration depends on the volume of water, the types of materials affected (e.g., hardwood vs. carpet), and how quickly we are able to begin the extraction process.
+                    </div>
+</details>
+<details class="group bg-white rounded-lg border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-bold text-lg">Will my insurance cover this?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/50">
+                        In most cases, sudden and accidental water damage (like burst pipes or appliance overflows) is covered by standard homeowner's insurance. We work directly with your insurance company to help document the damage and assist with the claim process.
+                    </div>
+</details>
+<details class="group bg-white rounded-lg border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-bold text-lg">Is the noise from the fans safe?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/50">
+                        Yes, the noise from industrial air movers is safe, though it can be loud (similar to a heavy-duty household vacuum). While it may be inconvenient, it is critical that these fans remain running 24/7 during the drying phase to prevent mold growth and secondary damage.
+                    </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Financing & Warranty -->
+<section class="py-section-gap">
+<div class="max-w-[1280px] mx-auto px-6 grid md:grid-cols-2 gap-12">
+<div class="bg-surface p-10 rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-secondary text-5xl mb-4" data-icon="payments" data-weight="fill" style="font-variation-settings: 'FILL' 1;">payments</span>
+<h3 class="font-h3 text-h3 mb-4 text-primary">Flexible Financing Plans</h3>
+<p class="text-on-surface-variant mb-6">Restoration can be an unexpected expense. We offer low-interest payment plans and work directly with all major insurance companies to minimize your out-of-pocket costs.</p>
+<a class="text-primary font-bold hover:underline flex items-center gap-2" href="#">Learn about insurance billing <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="bg-primary text-white p-10 rounded-xl">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-5xl mb-4" data-icon="verified_user" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-h3 text-h3 mb-4">The Dry State Guarantee</h3>
+<p class="opacity-90 mb-6">We stand by our work with a 100% satisfaction guarantee and a 5-year workmanship warranty. If moisture returns due to our oversight, we fix it at zero cost to you.</p>
+<div class="flex items-center gap-4 opacity-70 border-t border-white/20 pt-6">
+<img alt="Service Manager" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdYM65rBKanN0eS5jIX0BsEXJBgrVqAOvWl5RUcaDat3QDa2y3yXtksTT6pbRAIiw_wXDEsHJnBjR2sCW9CtnROpVsFayztF2yKxh9uNk5EeIuQp3KtOZ3fUJNquvbeY4ssRSEWAtoeY5qY7ZG5yvsXxpv6r2BJnh2RxA6pdAqHjSpDDRa4Fyh_TNb_G7nAxKUpeqLkkm9DfOJJ1SxCcLChOISNBpMX2I3tiSCOGAQiU8RTs_v_e6-MU4lhxgop3xNPcBki1wsD9dB"/>
+<div>
+<p class="font-bold">David Miller</p>
+<p class="text-sm">Operations Director</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary CTA (NEW) -->
+<section class="py-12 bg-secondary text-white">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+<div>
+<h3 class="text-xl font-bold">Unsure about hidden water?</h3>
+<p class="opacity-90">Schedule a high-precision moisture inspection today.</p>
+</div>
+</div>
+<button class="bg-white text-secondary font-cta text-cta px-8 py-3 rounded hover:bg-surface transition-colors shadow-lg">
+                Get Fast Quote
+            </button>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap">
+<div class="max-w-[1280px] mx-auto px-6 text-center">
+<div class="bg-surface-container-high rounded-2xl p-12 max-w-4xl mx-auto shadow-sm">
+<h2 class="font-h2 text-h2 text-primary mb-4">Don't Wait - Water Damage Spreads Fast</h2>
+<p class="text-on-surface-variant text-lg mb-10">Our emergency crews are ready to deploy in Richland Hills right now. Call us for a free estimate or emergency extraction.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="bg-secondary hover:bg-secondary/90 text-white font-cta text-cta px-10 py-5 rounded flex items-center justify-center gap-3 shadow-lg" href="tel:8001234567">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                        (800) DRY-STATE
+                    </a>
+<button class="bg-primary hover:bg-primary-container text-white font-cta text-cta px-10 py-5 rounded transition-all">
+                        Get Free Estimate
+                    </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-slate-200 mt-20 bg-slate-50">
+<div class="max-w-[1280px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-blue-900 mb-4">Dry State LLC</div>
+<p class="text-sm text-slate-500 mb-4">Richland Hills' most trusted name in emergency restoration. IICRC Certified and family-owned.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-slate-400" data-icon="share_location">share_location</span>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-blue-900 mb-4">Services</h5>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">Water Damage</a></li>
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">Fire Damage</a></li>
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">Mold Remediation</a></li>
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">Storm Damage</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-blue-900 mb-4">Company</h5>
+<ul class="space-y-2">
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">About Us</a></li>
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">Service Areas</a></li>
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">Contact</a></li>
+<li><a class="text-sm text-slate-500 hover:underline hover:text-blue-700" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-blue-900 mb-4">Contact Info</h5>
+<p class="text-sm text-slate-500 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+                Richland Hills, TX 76118
+            </p>
+<p class="text-sm text-slate-500 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-xs" data-icon="phone">phone</span>
+                (800) DRY-STATE
+            </p>
+<p class="text-sm text-slate-500 flex items-center gap-2">
+<span class="material-symbols-outlined text-xs" data-icon="mail">mail</span>
+                help@drystatellc.com
+            </p>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-6 mt-12 pt-8 border-t border-slate-200 text-center">
+<p class="text-sm text-slate-500">© 2024 Dry State LLC. All Rights Reserved. IICRC Certified Firm.</p>
+</div>
+</footer>
+</body></html>
