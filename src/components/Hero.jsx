@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
         >
           <div className="status-badge">
             <span className="dot"></span>
-            IMMEDIATE RESPONSE AVAILABLE
+            SERVING RICHLAND HILLS & NEARBY COMMUNITIES
           </div>
         </motion.div>
         
@@ -28,8 +29,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Expert Damage <span className="highlight">Restoration</span><br />
-          When Seconds Count.
+          Restoring What Matters Most,<br />
+          <span className="highlight">24/7 Emergency</span> Restoration.
         </motion.h1>
         
         <motion.p
@@ -38,7 +39,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="hero-subtext"
         >
-          Richland Hills' premier disaster recovery experts. We don't just dry out homes; we restore peace of mind with 24/7 rapid deployment and elite craftsmanship.
+          Rapid, reliable, and compassionate recovery services for your home or business — any time, any day. Richland Hills' trusted disaster restoration experts.
         </motion.p>
         
         <motion.div 
@@ -47,13 +48,13 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="hero-btns"
         >
-          <button className="btn btn-hero-primary">
+          <a href="tel:2147851130" className="btn btn-hero-primary">
             <span className="material-symbols-outlined">bolt</span>
             Request Immediate Help
-          </button>
-          <button className="btn btn-hero-secondary">
+          </a>
+          <Link to="/contact" className="btn btn-hero-secondary">
             Book Online
-          </button>
+          </Link>
         </motion.div>
         
         <motion.div 

@@ -10,7 +10,6 @@ import FreeInspection from '../components/FreeInspection';
 import RestorationProcess from '../components/RestorationProcess';
 import ServingAreas from '../components/ServingAreas';
 import ServiceFAQ from '../components/ServiceFAQ';
-import FinancingWarranty from '../components/FinancingWarranty';
 import SecondaryCTA from '../components/SecondaryCTA';
 import ServicePageCTA from '../components/ServicePageCTA';
 import ServicePageFooter from '../components/ServicePageFooter';
@@ -29,7 +28,6 @@ function ServicePage() {
       <RestorationProcess />
       <ServingAreas />
       <ServiceFAQ />
-      <FinancingWarranty />
       <SecondaryCTA />
       <ServicePageCTA />
       <ServicePageFooter />

@@ -60,8 +60,10 @@ const content = {
     { q: "Should I clean the soot myself?", a: "No, soot is often acidic and can cause permanent staining if handled incorrectly. Professional equipment is required." },
     { q: "Is my home safe to enter after a fire?", a: "We provide professional structural assessments to ensure the property is safe before anyone enters." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1599819177626-b50f9dd21c9b?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/fire-damage-hero.jpg",
+  featureImage: "/assets/fire-recovery.jpg",
+  sourceImage1: "/assets/fire-damage-source-1.png",
+  sourceImage2: "/assets/fire-damage-source-2.png"
 };
 
 function FireDamage() {

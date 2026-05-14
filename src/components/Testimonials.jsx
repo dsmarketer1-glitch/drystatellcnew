@@ -27,7 +27,7 @@ const Testimonials = () => {
         <div className="testimonials-layout">
           <div className="testimonials-sidebar reveal">
             <span className="sub-title" style={{ color: '#b6171e', letterSpacing: '2px' }}>CLIENT VOICES</span>
-            <h2 className="sidebar-title">What Our Clients Are Saying</h2>
+            <h2 className="sidebar-title">Customers Love Us!</h2>
             
             <div className="sidebar-rating">
               <div className="stars">
@@ -39,7 +39,7 @@ const Testimonials = () => {
             </div>
             
             <p className="sidebar-description">
-              We pride ourselves on 5-star service. Read about the experiences our customers have had during their restoration journey.
+              We take immense pride in our reputation for excellence. Read what our clients in Richland Hills have to say about our rapid response and quality.
             </p>
             
             <button className="btn btn-dark-blue">Read All Google Reviews</button>

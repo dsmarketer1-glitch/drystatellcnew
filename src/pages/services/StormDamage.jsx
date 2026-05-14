@@ -60,8 +60,10 @@ const content = {
     { q: "Does insurance cover storm damage?", a: "Most homeowners policies cover storm-related damage. We work directly with your carrier to verify coverage." },
     { q: "Can you help with fallen trees?", a: "Yes, we handle tree removal from structures and provide emergency stabilization." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1527482797697-87c5f03222ee?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/storm-damage-hero.jpg",
+  featureImage: "/assets/storm-damage-feature.png",
+  sourceImage1: "/assets/storm-damage-source-1.jpg",
+  sourceImage2: "/assets/storm-damage-source-2.jpg"
 };
 
 function StormDamage() {

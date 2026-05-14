@@ -101,28 +101,12 @@ const AreasWeServe = () => {
               </div>
             </div>
           </div>
-          <div className="relative aspect-[4/3] bg-[#f1f5f9] overflow-hidden rounded-2xl shadow-2xl border-[8px] md:border-[12px] border-white">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl border-[8px] md:border-[12px] border-white">
             <img 
-              className="w-full h-full object-cover grayscale opacity-60" 
-              alt="Satellite view of North Texas Dallas-Fort Worth metroplex" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOa_UFqGy28GJvZ9KRQgLZbpXHTct4NRqMS25v0diABBrTtQzjX6LzEHzkrc2lRNVPYcAi4h-inKewoi6kpJkr8-6l9SfDXuY4ehhljchamHa7CrwZYKcZJOMoX8FK4NMNbrX0CK4QjjQeb4R-LkPV-GPJzfOhz0gBv5zt04hr9KX7NVLQDXYR4j2oVFU-91-U65xgl1CddflZKYpkvUJR1CvjSGc3TGBC9bVIdx9JS4kqp-nxmYVHT7a9xnz__H9nz7muDX9uUIq0" 
+              className="w-full h-full object-cover" 
+              alt="DryState Restoration Fleet in Arlington" 
+              src="/assets/arlington-fleet.png" 
             />
-            <div className="absolute inset-0 bg-[#00123d]/5 mix-blend-multiply"></div>
-            {/* Radar Lines Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
-              <div className="w-[150%] h-[150%] border-[0.5px] border-[#00123d]/20 rounded-full"></div>
-              <div className="absolute w-[100%] h-[100%] border-[0.5px] border-[#00123d]/20 rounded-full"></div>
-              <div className="absolute w-[50%] h-[50%] border-[0.5px] border-[#00123d]/20 rounded-full"></div>
-              <div className="absolute w-full h-[0.5px] bg-[#00123d]/10"></div>
-              <div className="absolute h-full w-[0.5px] bg-[#00123d]/10"></div>
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative">
-                <div className="absolute -inset-10 bg-[#b6171e]/10 rounded-full animate-ping-slow"></div>
-                <div className="absolute -inset-5 bg-[#b6171e]/20 rounded-full"></div>
-                <div className="w-4 h-4 bg-[#b6171e] rounded-full border-2 border-white shadow-[0_0_15px_rgba(182,23,30,0.6)] relative z-10"></div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -130,34 +114,44 @@ const AreasWeServe = () => {
       {/* Detailed City List */}
       <section className="py-24 bg-white reveal">
         <div className="max-w-[1280px] mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-black text-[#0F265C] mb-4">Cities We Proudly Serve</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              From residential neighborhoods to commercial districts, we are your local partners in restoration.
-            </p>
-          </div>
-          
-          <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap gap-10">
-            {[
-              { title: "Arlington Hub", cities: ["Arlington (HQ)", "Pantego", "Dalworthington Gardens", "Kennedale"] },
-              { title: "Tarrant County", cities: ["Fort Worth", "Mansfield", "Grand Prairie", "Euless / Bedford"] },
-              { title: "Dallas County", cities: ["Dallas", "Irving", "Duncanville", "Cedar Hill"] },
-              { title: "Surrounding Areas", cities: ["Hurst", "North Richland Hills", "Burleson", "Crowley"] }
-            ].map((col, idx) => (
-              <div key={idx} className="flex-1 min-w-[200px]">
-                <h4 className="font-bold text-[#0F265C] text-lg pb-3 border-b border-gray-100 mb-6">
-                  {col.title}
-                </h4>
-                <ul className="space-y-4">
-                  {col.cities.map((city, cIdx) => (
-                    <li key={cIdx} className="flex items-center gap-3 text-gray-600 text-[15px]">
-                      <span className="w-1.5 h-1.5 bg-[#D32F2F] rounded-full shrink-0"></span>
-                      {city}
-                    </li>
-                  ))}
-                </ul>
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+            <div className="area-category">
+              <h2 className="text-3xl md:text-4xl font-black text-[#0F265C] mb-6">Primary Service Areas – Older Homes & Established Communities</h2>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+                {[
+                  ["Irving", "Grand Prairie", "Carrollton", "Duncanville", "Richland Hills", "North Richland Hills", "Bedford"],
+                  ["Euless", "Hurst", "Haltom City", "Arlington", "Fort Worth", "Farmers Branch"]
+                ].map((col, idx) => (
+                  <ul key={idx} className="space-y-4">
+                    {col.map((city, cIdx) => (
+                      <li key={cIdx} className="flex items-center gap-3 text-gray-600 text-[15px] font-bold">
+                        <span className="w-1.5 h-1.5 bg-[#D32F2F] rounded-full shrink-0"></span>
+                        {city}
+                      </li>
+                    ))}
+                  </ul>
+                ))}
               </div>
-            ))}
+            </div>
+
+            <div className="area-category">
+              <h3 className="text-xl md:text-2xl font-black text-[#0F265C] mb-6 mt-2">Additional DFW Metroplex Areas We Serve</h3>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                We also provide high-precision restoration and cleanup services to these growing communities across North Texas:
+              </p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+                {["Coppell", "Grapevine", "Keller", "Southlake", "Colleyville", "Lewisville", "Dallas", "Surrounding DFW communities"].map((city, idx) => (
+                  <li key={idx} className="flex items-center gap-3 text-gray-600 text-[15px] font-bold">
+                    <span className="w-1.5 h-1.5 bg-[#D32F2F]/60 rounded-full shrink-0"></span>
+                    {city}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Ticker from '../components/Ticker';
-import TrustBadges from '../components/TrustBadges';
+import ExpertOverview from '../components/ExpertOverview';
 import ServicesGrid from '../components/ServicesGrid';
 import RapidResponse from '../components/RapidResponse';
-import InsuranceClaims from '../components/InsuranceClaims';
+import WhyChooseUs from '../components/WhyChooseUs';
+import RestorationProcess from '../components/RestorationProcess';
 import Testimonials from '../components/Testimonials';
+import Stats from '../components/Stats';
 import FAQ from '../components/FAQ';
 import ServiceAreas from '../components/ServiceAreas';
 import CTASection from '../components/CTASection';
@@ -35,11 +37,13 @@ function Home() {
     <main>
       <Hero />
       <Ticker />
-      <TrustBadges />
+      <ExpertOverview />
       <ServicesGrid />
       <RapidResponse />
-      <InsuranceClaims />
+      <WhyChooseUs />
+      <RestorationProcess />
       <Testimonials />
+      <Stats />
       <FAQ />
       <ServiceAreas />
       <CTASection />

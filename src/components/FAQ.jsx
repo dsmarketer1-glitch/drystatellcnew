@@ -26,9 +26,9 @@ const FAQ = () => {
   return (
     <section className="faq-section section">
       <div className="container">
-        <div className="section-header reveal">
+        <div className="section-header text-center reveal">
           <span className="sub-title">COMMON QUESTIONS</span>
-          <h2>Frequently Asked Questions</h2>
+          <h2>How Can We Help You Today?</h2>
         </div>
         
         <div className="faq-container reveal">

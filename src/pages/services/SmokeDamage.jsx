@@ -60,8 +60,10 @@ const content = {
     { q: "Is smoke residue toxic?", a: "Yes, smoke contains various carcinogens and irritants that can cause health issues if not removed." },
     { q: "Will my clothes smell like smoke?", a: "We provide professional textile restoration that removes smoke odors from clothing, curtains, and upholstery." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1599819177626-b50f9dd21c9b?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/smoke-damage-hero.png",
+  featureImage: "/assets/smoke-damage-feature.jpg",
+  sourceImage1: "/assets/smoke-damage-source-1.png",
+  sourceImage2: "/assets/smoke-damage-source-2.png"
 };
 
 function SmokeDamage() {

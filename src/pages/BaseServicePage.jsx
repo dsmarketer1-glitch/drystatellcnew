@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import TrustBar from '../components/TrustBar';
 import ServingAreas from '../components/ServingAreas';
-import FinancingWarranty from '../components/FinancingWarranty';
 import SecondaryCTA from '../components/SecondaryCTA';
 import ServicePageCTA from '../components/ServicePageCTA';
 import Footer from '../components/Footer';
@@ -46,9 +46,9 @@ function BaseServicePage({ content }) {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>emergency</span>
                   Emergency Help
                 </a>
-                <button className="border-2 border-white hover:bg-white hover:text-primary text-white font-cta text-cta px-8 py-4 transition-all bg-transparent">
+                <Link to="/contact" className="border-2 border-white hover:bg-white hover:text-primary text-white font-cta text-cta px-8 py-4 transition-all bg-transparent no-underline flex items-center justify-center">
                   Get Free Estimate
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -150,8 +150,8 @@ function BaseServicePage({ content }) {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="order-2 md:order-1 reveal">
                 <div className="grid grid-cols-2 gap-4">
-                  <img alt="Burst Pipe" className="rounded aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOuA2x7WOZsxa1di3EAwPLm1kZIJ2YlFUfbgUzswHmj93JXx228X6DrgXZrdWmSEKnoeIqsQjilwWEVmYeq6Kp1Xh8rFxNBaZPOfV2VIYM0CtN91AuLMMu4s2zYt9cAd1X_D8VKDtrYh29ySyzCKs2pqk0Lk5VIiCtDTXBh3lvSMLQ2uSqPv2lFEDGPhyS0llfQEk1EFottmIdNqWLIt-jrjcdFv3NgLxMPIbzwcKCti78MbJgpPG-xUMjJ8f8CbeuZr3kxVypqo5M"/>
-                  <img alt="Roof Leak" className="rounded aspect-square object-cover mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNOM7gx88VO9_m-XkZtYCzWCPF1czhQheuvjBrRiIBuQCcCX2bzwYwASyQtR7ucoELDg0w-zjz9Yk8YOQ33MMm_ZPohC6MXLSOBEwPEMHW167topd16szhliItRX48zzo4jFjQ15qZZpj_NUsTD2Zbp-iOurTFIqo-l1fmR3Q6Q5NaNZOyKgzSwuHGdCPY5AMxM82WaFkt1g_gCRt_hY8sCcWRnLhc5TtLO47X9wR9VELOB2aoGJeOVI2kRHCLIbdV01vFdECFLfSB"/>
+                  <img alt="Burst Pipe" className="w-full rounded aspect-square object-cover" src={content.sourceImage1 || "https://lh3.googleusercontent.com/aida-public/AB6AXuBOuA2x7WOZsxa1di3EAwPLm1kZIJ2YlFUfbgUzswHmj93JXx228X6DrgXZrdWmSEKnoeIqsQjilwWEVmYeq6Kp1Xh8rFxNBaZPOfV2VIYM0CtN91AuLMMu4s2zYt9cAd1X_D8VKDtrYh29ySyzCKs2pqk0Lk5VIiCtDTXBh3lvSMLQ2uSqPv2lFEDGPhyS0llfQEk1EFottmIdNqWLIt-jrjcdFv3NgLxMPIbzwcKCti78MbJgpPG-xUMjJ8f8CbeuZr3kxVypqo5M"}/>
+                  <img alt="Roof Leak" className="w-full rounded aspect-square object-cover mt-8" src={content.sourceImage2 || "https://lh3.googleusercontent.com/aida-public/AB6AXuBNOM7gx88VO9_m-XkZtYCzWCPF1czhQheuvjBrRiIBuQCcCX2bzwYwASyQtR7ucoELDg0w-zjz9Yk8YOQ33MMm_ZPohC6MXLSOBEwPEMHW167topd16szhliItRX48zzo4jFjQ15qZZpj_NUsTD2Zbp-iOurTFIqo-l1fmR3Q6Q5NaNZOyKgzSwuHGdCPY5AMxM82WaFkt1g_gCRt_hY8sCcWRnLhc5TtLO47X9wR9VELOB2aoGJeOVI2kRHCLIbdV01vFdECFLfSB"}/>
                 </div>
               </div>
               <div className="order-1 md:order-2 reveal">
@@ -215,9 +215,9 @@ function BaseServicePage({ content }) {
               <h2 className="text-h2 font-h2 mb-4">{content.offerTitle || "Limited Time Offer"}</h2>
               <p className="text-lg opacity-90">{content.offerDesc || "Get a Free Professional Moisture Inspection with any water restoration service."}</p>
             </div>
-            <button className="bg-white text-primary font-cta text-cta px-10 py-5 rounded hover:bg-surface-container-highest transition-colors whitespace-nowrap shadow-xl">
+            <Link to="/contact" className="bg-white text-primary font-cta text-cta px-10 py-5 rounded hover:bg-surface-container-highest transition-colors whitespace-nowrap shadow-xl no-underline flex items-center justify-center">
               Claim Offer Now
-            </button>
+            </Link>
           </div>
         </section>
 
@@ -272,7 +272,6 @@ function BaseServicePage({ content }) {
           </div>
         </section>
 
-        <FinancingWarranty />
         <SecondaryCTA />
         <ServicePageCTA />
         <Footer />

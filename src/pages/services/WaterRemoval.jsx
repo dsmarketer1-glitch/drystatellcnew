@@ -60,8 +60,8 @@ const content = {
     { q: "How long does extraction take?", a: "Most residential extraction jobs can be completed in 2 to 4 hours depending on the volume of water." },
     { q: "Will the water come back?", a: "We identify the source of the water and provide temporary repairs to ensure the area remains dry." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/water-removal-hero.png",
+  featureImage: "/assets/water-removal-feature.png"
 };
 
 function WaterRemoval() {

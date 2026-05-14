@@ -42,14 +42,10 @@ const Contact = () => {
           <p className="text-[16px] md:text-[18px] text-[#b3c5ff] mb-10 max-w-2xl leading-relaxed px-2">
             Immediate mitigation is critical to prevent mold growth and structural failure. Our emergency crews are on standby across DFW.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 w-full max-w-4xl">
-            <a className="bg-white text-[#00123d] px-6 py-4 md:px-8 md:py-5 rounded-xl flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-2xl no-underline" href="tel:2147851130">
+          <div className="flex justify-center w-full max-w-4xl">
+            <a className="bg-white text-[#00123d] px-6 py-4 md:px-8 md:py-5 rounded-xl flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-2xl no-underline w-full sm:w-auto" href="tel:2147851130">
               <span className="text-[20px] sm:text-[24px] lg:text-[32px] font-['Work_Sans'] font-black whitespace-nowrap">214-785-1130</span>
             </a>
-            <button className="bg-[#b6171e] text-white px-6 py-4 md:px-8 md:py-5 rounded-xl font-bold text-[16px] md:text-[18px] flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-2xl group">
-              <span className="material-symbols-outlined group-hover:animate-bounce" style={{ fontVariationSettings: "'FILL' 1" }}>emergency_share</span>
-              <span className="whitespace-nowrap">Dispatch Now</span>
-            </button>
           </div>
         </div>
       </section>
@@ -204,73 +200,46 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* 5. Headquarters & Map (Side-by-Side Grid) */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-[1280px] mx-auto px-6 reveal">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-            <div className="text-center md:text-left">
-              <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-6">Arlington Headquarters</h2>
-              <p className="text-[16px] md:text-[18px] text-[#44464f] mb-8 md:mb-10 leading-relaxed">We centrally stage our equipment in Arlington to ensure rapid deployment to the entire DFW Metroplex.</p>
-              <div className="space-y-6 text-left inline-block md:block">
-                <div className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-[#b6171e] mt-1">location_on</span>
-                  <div>
-                    <p className="font-black text-[#00123d] text-[15px] md:text-[16px]">Office Location</p>
-                    <p className="text-[#44464f] text-[14px] md:text-[15px]">7410 Boulevard 26 | Unit #: S | Richland Hills, TX 76180</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-[#b6171e] mt-1">mail</span>
-                  <div>
-                    <p className="font-black text-[#00123d] text-[15px] md:text-[16px]">Mailing Address</p>
-                    <p className="text-[#44464f] text-[14px] md:text-[15px]">1527 W State Hwy 114 | Unit #: 500-116 | Grapevine, TX 76051</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-[#b6171e] mt-1">schedule</span>
-                  <div>
-                    <p className="font-black text-[#00123d] text-[15px] md:text-[16px]">Operating Hours</p>
-                    <p className="text-[#44464f] text-[14px] md:text-[15px]">Dispatch: 24/7/365 | Office: Mon-Fri 8am - 5pm</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl relative border-[6px] md:border-[8px] border-white">
-              <img 
-                className="w-full h-full object-cover" 
-                alt="Service Area Map" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDage66PU3d6QI_P7HUfkO60lA3HUyHB9WxFR6q3NdSxkFHkyh3SIq63OqynV9Ew_Wu0k9h4r70y9w4QkWpZSu2BHHYqhAd0YiWr3eqLtVKd33Dme3_eP66CCVCfEHwjrdkh-4RfL7TgwPfB2IQBIBG6aUxe4S8Hz4N6mGWVuTZ4o3mRACGbcqopi229QV-oUrjTLFKct8jkP-t1TilELeWEPxcU_OSqPRMuhbtClcmovNTrHKHLCP1Z4Ml2rw6561PB2DhZIfOHO5Y" 
-              />
-              <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-xl text-[10px] md:text-[12px] font-black flex items-center gap-2">
-                <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-[#b6171e] rounded-full animate-ping"></span>
-                DFW Service Radius
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* 7. Service Areas */}
       <section className="py-16 md:py-24 bg-[#f8f9fa] reveal">
         <div className="max-w-[1280px] mx-auto px-6">
-          <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-10 md:mb-12 text-center md:text-left">North Texas Service Areas</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12">
-            {[
-              { county: "Tarrant County", cities: ["Arlington", "Fort Worth", "Mansfield", "Richland Hills", "Keller"] },
-              { county: "Dallas County", cities: ["Dallas", "Irving", "Grand Prairie", "Coppell", "Richardson"] },
-              { county: "Denton County", cities: ["Denton", "Lewisville", "Flower Mound", "The Colony"] },
-              { county: "Collin County", cities: ["Plano", "Frisco", "McKinney", "Allen"] },
-              { county: "Surrounding", cities: ["Grapevine", "Southlake", "Colleyville", "Bedford"] }
-            ].map((col, idx) => (
-              <div key={idx} className="space-y-4 text-center md:text-left">
-                <h4 className="font-black text-[#00123d] uppercase tracking-wider text-[11px] md:text-[12px] border-b border-slate-200 pb-2 inline-block md:block">{col.county}</h4>
-                <ul className="space-y-2 text-[#44464f] text-[14px] md:text-[15px]">
-                  {col.cities.map((city, cIdx) => (
-                    <li key={cIdx} className="hover:text-[#b6171e] transition-colors">{city}</li>
-                  ))}
-                </ul>
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+            <div>
+              <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-6">Primary Service Areas – Older Homes & Established Communities</h2>
+              <p className="text-[16px] md:text-[18px] text-[#44464f] mb-8 leading-relaxed">
+                We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+                {[
+                  ["Irving", "Grand Prairie", "Carrollton", "Duncanville", "Richland Hills", "North Richland Hills", "Bedford"],
+                  ["Euless", "Hurst", "Haltom City", "Arlington", "Fort Worth", "Farmers Branch"]
+                ].map((col, idx) => (
+                  <ul key={idx} className="space-y-4">
+                    {col.map((city, cIdx) => (
+                      <li key={cIdx} className="flex items-center gap-3 text-[#44464f] text-[15px] font-bold">
+                        <span className="w-1.5 h-1.5 bg-[#b6171e] rounded-full shrink-0"></span>
+                        {city}
+                      </li>
+                    ))}
+                  </ul>
+                ))}
               </div>
-            ))}
+            </div>
+
+            <div>
+              <h3 className="text-[22px] md:text-[28px] font-['Work_Sans'] font-bold text-[#00123d] mb-6 mt-2">Additional DFW Metroplex Areas We Serve</h3>
+              <p className="text-[16px] md:text-[18px] text-[#44464f] mb-8 leading-relaxed">
+                We also provide high-precision restoration and cleanup services to these growing communities across North Texas:
+              </p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+                {["Coppell", "Grapevine", "Keller", "Southlake", "Colleyville", "Lewisville", "Dallas", "Surrounding DFW communities"].map((city, idx) => (
+                  <li key={idx} className="flex items-center gap-3 text-[#44464f] text-[15px] font-bold">
+                    <span className="w-1.5 h-1.5 bg-[#b6171e]/60 rounded-full shrink-0"></span>
+                    {city}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>

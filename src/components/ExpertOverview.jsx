@@ -1,5 +1,5 @@
 import React from 'react';
-import expertImg from '../assets/restoration-expert.png';
+import expertImg from '../assets/flood-recovery.jpg';
 import { ShieldCheck, Target, Award } from 'lucide-react';
 
 function ExpertOverview() {
@@ -25,13 +25,16 @@ function ExpertOverview() {
           </div>
 
           <div className="w-full md:w-1/2 reveal" style={{ transitionDelay: '200ms' }}>
-            <span className="text-[#b6171e] font-black tracking-widest uppercase text-sm mb-4 block">Professional Expertise</span>
+            <span className="text-[#b6171e] font-black tracking-widest uppercase text-sm mb-4 block">Professional Restoration</span>
             <h2 className="text-3xl sm:text-5xl font-black text-[#00123d] leading-tight mb-8">
-              Richland Hills' <br />
-              <span className="text-gray-400">#1 Trusted</span> Experts
+              Professional Disaster Restoration <br />
+              <span className="text-gray-400">in Richland Hills</span>
             </h2>
+            <p className="text-gray-500 text-lg mb-6 leading-relaxed">
+              At DryState LLC, we specialize in turning disaster into recovery with speed, care, and unmatched expertise. Whether you’re facing water damage, fire aftermath, mold growth, or storm destruction, our certified professionals are available around the clock to bring your property — and your peace of mind — back to normal.
+            </p>
             <p className="text-gray-500 text-lg mb-10 leading-relaxed">
-              Drystate isn't just a cleaning company. We are a specialized restoration firm with over a decade of experience handling the most complex water damage scenarios in North Texas. Our technicians are highly trained, IICRC certified, and committed to restoring your peace of mind.
+              With years of experience serving families and businesses across the Richland Hills area, DryState is committed to restoring more than just buildings — we restore comfort, safety, and trust.
             </p>
 
             <div className="grid grid-cols-1 gap-6">

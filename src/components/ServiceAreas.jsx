@@ -9,42 +9,53 @@ const ServiceAreas = () => {
   return (
     <section className="service-areas section" id="areas">
       <div className="container">
-        <div className="areas-layout">
-          <div className="areas-visual-card reveal">
-            <div className="map-card">
-              <div className="grid-overlay"></div>
-              <div className="map-content">
-                <div className="pin-circle">
-                  <MapPin size={32} fill="#fff" color="#00123d" />
-                </div>
-                <h3>Proudly Serving North Texas</h3>
-              </div>
-            </div>
+        <div className="areas-content-center reveal">
+          <div className="text-center mb-12">
+            <span className="sub-title" style={{ color: '#b6171e', letterSpacing: '2px' }}>LOCALIZED CARE</span>
+            <h2 className="areas-title mb-6">Serving Richland Hills & Surrounding Areas</h2>
+            <p className="areas-description max-w-3xl mx-auto">
+              Based in the heart of North Texas, our strategic location allows us to reach any disaster in the metroplex within an hour.
+            </p>
           </div>
 
-          <div className="areas-content-side reveal">
-            <span className="sub-title" style={{ color: '#b6171e', letterSpacing: '2px' }}>LOCALIZED CARE</span>
-            <h2 className="areas-title">Serving Richland Hills & Surrounding Areas</h2>
-            <p className="areas-description">
-              Based in the heart of North Texas, our strategic location allows us 
-              to reach any disaster in the metroplex within an hour.
-            </p>
-
-            <div className="city-pills-grid">
-              {cities.map((city, index) => (
-                <div key={index} className="city-pill">
-                  <Building2 size={18} className="city-pill-icon" />
-                  <span>{city}</span>
-                </div>
-              ))}
+          <div className="areas-categories-grid">
+            <div className="area-category">
+              <h3 className="category-title">Primary Service Areas – Older Homes & Established Communities</h3>
+              <p className="category-desc">We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:</p>
+              <div className="cities-list-columns">
+                <ul>
+                  <li>Irving</li>
+                  <li>Grand Prairie</li>
+                  <li>Carrollton</li>
+                  <li>Duncanville</li>
+                  <li>Richland Hills</li>
+                  <li>North Richland Hills</li>
+                  <li>Bedford</li>
+                </ul>
+                <ul>
+                  <li>Euless</li>
+                  <li>Hurst</li>
+                  <li>Haltom City</li>
+                  <li>Arlington</li>
+                  <li>Fort Worth</li>
+                  <li>Farmers Branch</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="area-footer-icons">
-              <div className="area-footer-icon-box">
-                <img src="https://api.iconify.design/material-symbols:clock-loader-60.svg?color=%2364748b" alt="24/7" width="24" />
-              </div>
-              <div className="area-footer-icon-box">
-                <img src="https://api.iconify.design/material-symbols:shield-check-outline.svg?color=%2364748b" alt="Certified" width="24" />
+            <div className="area-category">
+              <h3 className="category-title">Additional DFW Metroplex Areas We Serve</h3>
+              <div className="cities-list-columns single-col">
+                <ul>
+                  <li>Coppell</li>
+                  <li>Grapevine</li>
+                  <li>Keller</li>
+                  <li>Southlake</li>
+                  <li>Colleyville</li>
+                  <li>Lewisville</li>
+                  <li>Dallas</li>
+                  <li>Surrounding DFW communities</li>
+                </ul>
               </div>
             </div>
           </div>

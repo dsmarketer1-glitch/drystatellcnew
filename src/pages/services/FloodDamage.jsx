@@ -61,7 +61,9 @@ const content = {
     { q: "Is flood water dangerous?", a: "It can be. If the water came from the ground or a sewer, it's considered 'Category 3' and requires professional disinfection." }
   ],
   heroImage: "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  featureImage: "/assets/flood-mitigation.jpg",
+  sourceImage1: "/assets/flood-source-1.jpg",
+  sourceImage2: "/assets/flood-source-2.jpg"
 };
 
 function FloodDamage() {

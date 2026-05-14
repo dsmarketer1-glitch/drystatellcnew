@@ -1,38 +1,45 @@
 import React from 'react';
 
 function ServingAreas() {
-  const areas = [
-    "Richland Hills",
-    "Fort Worth",
-    "Arlington",
-    "Dallas",
-    "North Richland Hills",
-    "Haltom City",
-    "Hurst",
-    "Euless"
-  ];
+  const primaryAreas1 = ["Irving", "Grand Prairie", "Carrollton", "Duncanville", "Richland Hills", "North Richland Hills", "Bedford"];
+  const primaryAreas2 = ["Euless", "Hurst", "Haltom City", "Arlington", "Fort Worth", "Farmers Branch"];
+  const additionalAreas = ["Coppell", "Grapevine", "Keller", "Southlake", "Colleyville", "Lewisville", "Dallas", "Surrounding DFW communities"];
 
   return (
-    <section className="py-section-gap">
+    <section className="py-section-gap bg-surface-container-low">
       <div className="max-w-[1280px] mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="bg-surface-container rounded-xl p-8 h-[400px] flex items-center justify-center border border-outline-variant">
-            <div className="text-center">
-              <span className="material-symbols-outlined text-secondary text-6xl mb-4" data-icon="location_on">location_on</span>
-              <h3 className="font-h3 text-h3 text-primary">North Texas Coverage</h3>
-              <p className="text-on-surface-variant">Rapid response teams stationed throughout the metroplex.</p>
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+          <div className="area-category">
+            <h2 className="font-h2 text-h2 text-primary mb-6">Primary Service Areas – Older Homes & Established Communities</h2>
+            <p className="text-body-lg mb-8 text-on-surface-variant">
+              We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:
+            </p>
+            
+            <div className="cities-list-columns">
+              <ul>
+                {primaryAreas1.map((area, index) => (
+                  <li key={index}>{area}</li>
+                ))}
+              </ul>
+              <ul>
+                {primaryAreas2.map((area, index) => (
+                  <li key={index}>{area}</li>
+                ))}
+              </ul>
             </div>
           </div>
-          <div>
-            <h2 className="font-h2 text-h2 text-primary mb-6">Serving Richland Hills & Surrounding Areas</h2>
-            <p className="text-body-lg mb-8">We are a local family-owned business. Our strategic placement allows us to reach any North Texas emergency in under 60 minutes.</p>
-            <div className="grid grid-cols-2 gap-4">
-              {areas.map((area, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                  <span className="font-bold">{area}</span>
-                </div>
-              ))}
+
+          <div className="area-category">
+            <h3 className="category-title mt-2">Additional DFW Metroplex Areas We Serve</h3>
+            <p className="text-body-lg mb-8 text-on-surface-variant">
+              We also provide high-precision restoration and cleanup services to these growing communities across North Texas:
+            </p>
+            <div className="cities-list-columns single-col">
+              <ul>
+                {additionalAreas.map((area, index) => (
+                  <li key={index}>{area}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

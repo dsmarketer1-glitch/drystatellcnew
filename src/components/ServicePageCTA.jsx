@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ServicePageCTA() {
   return (
@@ -12,9 +13,9 @@ function ServicePageCTA() {
               <span className="material-symbols-outlined" data-icon="call">call</span>
               214-785-1130
             </a>
-            <button className="bg-primary hover:bg-primary-container text-white font-cta text-cta px-10 py-5 rounded transition-all">
+            <Link to="/contact" className="bg-primary hover:bg-primary-container text-white font-cta text-cta px-10 py-5 rounded transition-all no-underline flex items-center justify-center">
               Get Free Estimate
-            </button>
+            </Link>
           </div>
         </div>
       </div>

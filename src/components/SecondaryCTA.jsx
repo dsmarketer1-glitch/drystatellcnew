@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function SecondaryCTA() {
   return (
@@ -11,9 +12,9 @@ function SecondaryCTA() {
             <p className="opacity-90">Schedule a high-precision moisture inspection today.</p>
           </div>
         </div>
-        <button className="bg-white text-secondary font-cta text-cta px-8 py-3 rounded hover:bg-surface transition-colors shadow-lg">
+        <Link to="/contact" className="bg-white text-secondary font-cta text-cta px-8 py-3 rounded hover:bg-surface transition-colors shadow-lg no-underline">
           Get Fast Quote
-        </button>
+        </Link>
       </div>
     </section>
   );

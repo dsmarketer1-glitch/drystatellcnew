@@ -60,8 +60,10 @@ const content = {
     { q: "Should I call my insurance first?", a: "No, call us first to stabilize the damage and prevent secondary issues. We'll help you with the claim afterward." },
     { q: "What is LGR Dehumidification?", a: "LGR (Low Grain Refrigerant) dehumidifiers are the most effective units in the industry, capable of removing moisture even in low-humidity environments." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/water-damage-hero.png",
+  featureImage: "/assets/emergency-water-leak.png",
+  sourceImage1: "/assets/water-damage-source-1.png",
+  sourceImage2: "/assets/water-damage-source-2.png"
 };
 
 function WaterDamage() {
