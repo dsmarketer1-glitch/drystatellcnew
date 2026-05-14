@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="footer-brand">
             <Link to="/" className="footer-logo-link">
-              <img src="/assets/logo.png" alt="Dry State LLC" className="footer-logo" />
+              <img src="/assets/drystate-logo.png" alt="Dry State LLC" className="footer-logo" />
             </Link>
             <div className="brand-content">
               <h3 className="brand-tagline">Restoring Families, Building Communities</h3>
