@@ -78,8 +78,8 @@ const AreasWeServe = () => {
         <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div className="text-center md:text-left">
             <span className="text-[#b6171e] text-[11px] md:text-[12px] font-bold tracking-[0.2em] uppercase mb-4 block">STRATEGIC LOCATION</span>
-            <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-6 leading-[1.2] tracking-[-0.01em]">Arlington: The Heart of Our DFW Operations</h2>
-            <p className="text-[16px] md:text-[18px] text-[#44464f] mb-10 leading-[1.7]">Headquartered in Arlington, Dry State LLC is strategically positioned to reach any corner of the DFW Metroplex within an hour. Our central location allows our fleet to deploy instantly to Fort Worth, Dallas, and everywhere in between.</p>
+            <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-6 leading-[1.2] tracking-[-0.01em]">Richland Hills: The Heart of Our DFW Operations</h2>
+            <p className="text-[16px] md:text-[18px] text-[#44464f] mb-10 leading-[1.7]">Headquartered in Richland Hills, Dry State LLC is strategically positioned to reach any corner of the DFW Metroplex within an hour. Our central location allows our fleet to deploy instantly to Fort Worth, Dallas, and everywhere in between.</p>
             <div className="space-y-4 text-left inline-block md:block">
               <div className="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-white border border-[#f1f5f9] rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 md:w-14 md:h-14 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -104,8 +104,8 @@ const AreasWeServe = () => {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl border-[8px] md:border-[12px] border-white">
             <img 
               className="w-full h-full object-cover" 
-              alt="DryState Restoration Fleet in Arlington" 
-              src="/assets/arlington-fleet.png" 
+              alt="DryState Restoration in Richland Hills" 
+              src="/assets/richland-hills-feature.jpg" 
             />
           </div>
         </div>
@@ -124,7 +124,7 @@ const AreasWeServe = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
                 {[
                   ["Irving", "Grand Prairie", "Carrollton", "Duncanville", "Richland Hills", "North Richland Hills", "Bedford"],
-                  ["Euless", "Hurst", "Haltom City", "Arlington", "Fort Worth", "Farmers Branch"]
+                  ["Euless", "Hurst", "Haltom City", "Fort Worth", "Farmers Branch"]
                 ].map((col, idx) => (
                   <ul key={idx} className="space-y-4">
                     {col.map((city, cIdx) => (
@@ -172,7 +172,7 @@ const AreasWeServe = () => {
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
             <div className="border-l-2 border-[#b6171e] pl-6 md:pl-8">
               <h3 className="text-[20px] md:text-[22px] font-['Work_Sans'] font-bold mb-3 text-white">Rapid Secondary Damage Prevention</h3>
-              <p className="text-[15px] md:text-[16px] text-white/60 leading-[1.7]">Arlington humidity can cause severe mold issues in as little as 24-48 hours. Our local proximity allows us to begin drying procedures immediately.</p>
+              <p className="text-[15px] md:text-[16px] text-white/60 leading-[1.7]">Richland Hills humidity can cause severe mold issues in as little as 24-48 hours. Our local proximity allows us to begin drying procedures immediately.</p>
             </div>
             <div className="border-l-2 border-[#b6171e] pl-6 md:pl-8">
               <h3 className="text-[20px] md:text-[22px] font-['Work_Sans'] font-bold mb-3 text-white">Deep DFW Network</h3>
@@ -208,7 +208,7 @@ const AreasWeServe = () => {
               <img 
                 className="w-full h-full object-cover" 
                 alt="Professional restoration technician unloading equipment" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUmr6EH7ydHVJ6dlWm8stbn2dNGj3BY6qH8RwTOFCVSviBQclKOKE2HLzbqtQqmkMwWs0cajdWHumJAwmhMJOcZq7gkWl1_uOPzJaydjRo8hwEhYUt_I0rnp6hFV8XlImP33NCOPQYMj8O62CnlWW9RNAJMzo7AWG9am_cMxuZYGt_mDO6ShSTxZuumJDuvrdnxV-0UFePeLjhp2XiOZVg40jDqdiCYY-ijBH8N005LTQEsbcBaBLaGU3IyHli0U0JjAKiLjZAh36b" 
+                src="/assets/our-promise-feature.png" 
               />
               <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#00123d]/10"></div>
             </div>
@@ -225,7 +225,7 @@ const AreasWeServe = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Sarah J.", role: "Arlington Resident", text: "Our burst pipe in Arlington happened at 2 AM. Dry State was there before 3 AM and saved our hardwood floors. Professional and efficient." },
+              { name: "Sarah J.", role: "Richland Hills Resident", text: "Our burst pipe in Richland Hills happened at 2 AM. Dry State was there before 3 AM and saved our hardwood floors. Professional and efficient." },
               { name: "Marcus R.", role: "Fort Worth Business Owner", text: "The smoke damage in our Fort Worth office was extensive. They handled the entire insurance claim and the cleaning was flawless." },
               { name: "Elena W.", role: "Dallas Homeowner", text: "Used them for property restoration in Dallas after the spring storms. Knowledgeable crew and they explained everything clearly." }
             ].map((review, idx) => (
@@ -260,7 +260,7 @@ const AreasWeServe = () => {
           </div>
           <div className="space-y-6">
             {[
-              { q: "Do you serve areas outside of Arlington?", a: "Yes, while our headquarters is in Arlington, we provide full restoration services to the entire Dallas-Fort Worth Metroplex, including Dallas, Fort Worth, Irving, Plano, and all surrounding suburbs." },
+              { q: "Do you serve areas outside of Richland Hills?", a: "Yes, while our headquarters is in Richland Hills, we provide full restoration services to the entire Dallas-Fort Worth Metroplex, including Dallas, Fort Worth, Irving, Plano, and all surrounding suburbs." },
               { q: "What is your typical response time in Dallas?", a: "We maintain teams throughout the metroplex. For Dallas emergencies, we typically arrive on-site within 45 to 60 minutes of your initial call, regardless of traffic conditions." },
               { q: "Are you available on weekends and holidays?", a: "Absolutely. Emergencies don't follow a schedule. Our DFW response team is active 24/7, 365 days a year, including all major holidays." }
             ].map((faq, idx) => (

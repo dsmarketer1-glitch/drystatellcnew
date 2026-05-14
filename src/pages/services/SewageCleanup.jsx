@@ -60,8 +60,10 @@ const content = {
     { q: "Can my furniture be saved?", a: "Porous items like mattresses and sofas usually must be disposed of for safety. Non-porous items can often be sanitized." },
     { q: "How long does cleanup take?", a: "The initial cleanup and sanitization usually take 24-48 hours, followed by drying and restoration." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1585702138251-512015509748?auto=format&fit=crop&w=800&q=80"
+  heroImage: "/assets/sewage-cleanup-hero.png",
+  featureImage: "/assets/sewage-cleanup-feature.jpg",
+  sourceImage1: "/assets/sewage-cleanup-source-1.png",
+  sourceImage2: "/assets/sewage-cleanup-source-2.png"
 };
 
 function SewageCleanup() {

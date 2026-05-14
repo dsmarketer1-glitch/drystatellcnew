@@ -60,8 +60,10 @@ const content = {
     { q: "Is my furniture safe in storage?", a: "Yes, our facility is 24/7 monitored, climate-controlled, and fully insured." },
     { q: "What is ultrasonic cleaning?", a: "It's a process that uses sound waves to create millions of tiny bubbles that gently scrub every surface of an item, even the parts we can't see." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/content-cleaning-hero.jpg",
+  featureImage: "/assets/content-cleaning-feature.png",
+  sourceImage1: "/assets/content-cleaning-source-1.jpg",
+  sourceImage2: "/assets/content-cleaning-source-2.png"
 };
 
 function ContentCleaning() {

@@ -30,7 +30,7 @@ const About = () => {
           <img 
             className="w-full h-full object-cover" 
             alt="Professional restoration technicians" 
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop" 
+            src="/assets/about-hero.jpg" 
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#00123d]/85 to-[#00123d]/70"></div>
         </div>
@@ -73,7 +73,7 @@ const About = () => {
           <img 
             alt="Office desk with restoration plans" 
             className="rounded-2xl shadow-2xl border border-slate-200 w-full" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkiLY1b3zoOPCBNTJKAMUzwqBSYwtCxlPU9NXyO_WQkdteIGZjylJlkOqWm1PJJcvQGlpC1S25oIstYvbXm1WvxtLQTzL7wehW6MiDyqfz89kIJFCmbcZ6zh0q1HubJLUGj8s9iDH9E6ejvjJJYPPuh6Klcq7byQyUl-xAoq8lxt3PUcBWFB0ocVKTA9-tlJS-8TpG4uaFF-Fi3LR2gCqw4gp0nJ-4P9bWFk3iw6wy9Oo7Z1Ex99Ragvd9JMdgydfJ2r3DO3ST9ymW" 
+            src="/assets/mission-vision-feature.png" 
           />
           <div className="absolute -bottom-6 -right-6 bg-[#00123d] p-6 md:p-10 rounded-2xl shadow-2xl text-white hidden sm:block border-4 border-white">
             <p className="text-[32px] md:text-[42px] font-bold leading-none mb-1">15+</p>
@@ -234,11 +234,11 @@ const About = () => {
       {/* 8. Community Commitment */}
       <section className="py-16 md:py-24 px-6 max-w-[1280px] mx-auto reveal">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <div className="order-2 md:order-1 relative">
+          <div className="relative order-2 md:order-1">
             <img 
-              alt="Local community support" 
-              className="rounded-2xl shadow-2xl border border-slate-100 w-full" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMpA9zMlWkX43yz6FU4ONsHzcFXysBy6j45X74nBJ3BUz81bGFhyCKR4eHW1qOIbAfQDpA-O_pHY8u6AV-yOiRfWchBxSxNv4cnJhvksaSMNCBdIfnPrfxFKood2ggqznf9rFUOfTr2M2RTmYP08PKiEBLyqYIiSN0wfibsmKbwOTuaCxjRvDT9X3M5rz71Hpxn4Q_BOMPVKNo4yfdyEC6lNiOlxpwvM6zIu7PwAa-SaHB-tDTF8Zu-PJtkuAaktaSJLVe6ZuncSUk" 
+              alt="DryState team at local community event" 
+              className="rounded-2xl shadow-xl w-full h-[500px] object-cover" 
+              src="/assets/community-commitment-feature.png" 
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-[#00123d]/20 to-transparent rounded-2xl pointer-events-none"></div>
           </div>

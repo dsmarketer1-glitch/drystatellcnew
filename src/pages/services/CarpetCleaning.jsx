@@ -60,8 +60,10 @@ const content = {
     { q: "Can you remove pet urine smells?", a: "Yes, we use specialized enzyme treatments that break down urine at the molecular level." },
     { q: "Do you move furniture?", a: "We move light items like chairs and side tables. We ask that you move valuables and large electronics." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/carpet-cleaning-hero.png",
+  featureImage: "/assets/carpet-cleaning-feature.png",
+  sourceImage1: "/assets/carpet-cleaning-source-1.jpg",
+  sourceImage2: "/assets/carpet-cleaning-source-2.png"
 };
 
 function CarpetCleaning() {

@@ -176,38 +176,6 @@ function BaseServicePage({ content }) {
           </div>
         </section>
 
-        {/* Insurance Partnership Section */}
-        <section className="bg-surface-container-low py-section-gap">
-          <div className="max-w-[1280px] mx-auto px-6">
-            <div className="flex flex-col md:flex-row items-center gap-12">
-              <div className="flex-1">
-                <h2 className="font-h2 text-h2 text-primary mb-6">{content.insuranceTitle || "Hassle-Free Insurance Claims"}</h2>
-                <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                  {content.insuranceDesc || "We understand how stressful dealing with insurance can be during a disaster. Dry State LLC works directly with all major insurance carriers to streamline your claim process."}
-                </p>
-                <div className="flex flex-wrap gap-x-8 gap-y-4 items-center opacity-60 grayscale mt-8">
-                  <div className="font-black text-xl text-primary uppercase">State Farm</div>
-                  <div className="font-black text-xl text-primary uppercase">Allstate</div>
-                  <div className="font-black text-xl text-primary uppercase">Liberty Mutual</div>
-                  <div className="font-black text-xl text-primary uppercase">Travelers</div>
-                  <div className="font-black text-xl text-primary uppercase">Nationwide</div>
-                </div>
-              </div>
-              <div className="flex-1 bg-white p-8 rounded-xl border border-outline-variant shadow-sm">
-                <h4 className="font-h3 text-h3 mb-4 text-primary">Direct Billing Available</h4>
-                <ul className="space-y-4">
-                  {(content.insuranceBenefits || ["We handle all the paperwork for you", "Direct coordination with adjusters", "No upfront payments for qualified claims"]).map((benefit, i) => (
-                    <li key={i} className="flex gap-3">
-                      <span className="material-symbols-outlined text-secondary">verified</span>
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Free Inspection Offer */}
         <section className="max-w-[1280px] mx-auto px-6 my-section-gap">
           <div className="bg-primary text-white p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8 border-l-8 border-secondary">

@@ -61,7 +61,9 @@ const content = {
     { q: "Will the water come back?", a: "We identify the source of the water and provide temporary repairs to ensure the area remains dry." }
   ],
   heroImage: "/assets/water-removal-hero.png",
-  featureImage: "/assets/water-removal-feature.png"
+  featureImage: "/assets/water-removal-feature.png",
+  sourceImage1: "/assets/water-removal-source-1.jpg",
+  sourceImage2: "/assets/water-removal-source-2.jpg"
 };
 
 function WaterRemoval() {

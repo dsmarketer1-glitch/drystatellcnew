@@ -60,8 +60,10 @@ const content = {
     { q: "Can I make changes during the rebuild?", a: "Yes! Many clients take this opportunity to upgrade their kitchen or flooring during the reconstruction." },
     { q: "How long does a rebuild take?", a: "Timelines vary by scope, but we provide a detailed project schedule before work begins." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/reconstruction-hero.png",
+  featureImage: "/assets/reconstruction-feature.png",
+  sourceImage1: "/assets/reconstruction-source-1.jpg",
+  sourceImage2: "/assets/reconstruction-source-2.jpg"
 };
 
 function Reconstruction() {

@@ -60,8 +60,10 @@ const content = {
     { q: "Can you change the grout color?", a: "Yes! We offer grout color sealing that can completely change the look of your tile while providing maximum protection." },
     { q: "Is the sealer safe for pets?", a: "Yes, once the sealer is dry (usually 2-4 hours), it is completely non-toxic and safe for the whole family." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/tile-grout-hero.png",
+  featureImage: "/assets/tile-grout-feature.png",
+  sourceImage1: "/assets/tile-grout-source-1.jpg",
+  sourceImage2: "/assets/tile-grout-source-2.png"
 };
 
 function TileGroutCleaning() {

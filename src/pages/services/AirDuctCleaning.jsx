@@ -60,8 +60,10 @@ const content = {
     { q: "Will this make my house dusty?", a: "No, our high-powered HEPA vacuum system creates negative pressure, pulling all dust out of your home." },
     { q: "Can this lower my energy bill?", a: "Yes, cleaning the ducts and HVAC coils improves airflow, allowing your system to run more efficiently." }
   ],
-  heroImage: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80",
-  featureImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+  heroImage: "/assets/air-duct-hero.png",
+  featureImage: "/assets/air-duct-feature.png",
+  sourceImage1: "/assets/air-duct-source-1.png",
+  sourceImage2: "/assets/air-duct-source-2.jpg"
 };
 
 function AirDuctCleaning() {
