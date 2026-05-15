@@ -40,11 +40,6 @@ const RapidResponse = () => {
               <span className="small-text">ALWAYS READY</span>
             </div>
           </div>
-          
-          <div className="technician-badge">
-            <span className="count">100+</span>
-            <span className="label">TECHNICIANS READY</span>
-          </div>
         </div>
       </div>
     </section>
