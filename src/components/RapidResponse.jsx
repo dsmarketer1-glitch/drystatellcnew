@@ -6,26 +6,26 @@ const RapidResponse = () => {
     <section className="rapid-response section">
       <div className="container response-flex">
         <div className="response-content reveal">
-          <span className="sub-title">FAST EMERGENCY RESPONSE</span>
-          <h2>FAST EMERGENCY RESTORATION WHEN YOU NEED IT MOST</h2>
+          <span className="sub-title">AVAILABLE DAY & NIGHT</span>
+          <h2>24/7 Emergency Restoration Services</h2>
           <p className="desc">
-            Disasters don’t wait for business hours — neither do we. Whether it’s a flooded basement, fire aftermath, storm wreckage, or hazardous sewage backup, DryState is on-call 24/7 to protect your property and start the recovery process immediately.
+            Emergencies do not wait — and neither do we. Our team is available 24/7 to provide rapid response, damage mitigation, and professional restoration services when your property needs immediate attention.
           </p>
           
           <div className="readiness-cards">
             <div className="readiness-card">
               <div className="card-icon"><Clock color="#b6171e" /></div>
               <div className="card-text">
-                <h4>60-Minute Arrival Guarantee</h4>
-                <p>Strategic staging across DFW ensures our technicians arrive on-site within the hour.</p>
+                <h4>Rapid Emergency Dispatch</h4>
+                <p>Our strategically positioned teams help us respond quickly throughout the Dallas–Fort Worth area.</p>
               </div>
             </div>
             
             <div className="readiness-card">
               <div className="card-icon"><HardHat color="#b6171e" /></div>
               <div className="card-text">
-                <h4>Industrial Equipment Inventory</h4>
-                <p>Access to large-loss desiccant dehumidifiers and specialized LGR technology for any scale.</p>
+                <h4>Professional Drying Equipment</h4>
+                <p>We use commercial-grade drying and moisture control equipment to handle everything from small residential losses to large-scale property damage.</p>
               </div>
             </div>
           </div>

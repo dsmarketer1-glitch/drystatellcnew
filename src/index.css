@@ -288,7 +288,7 @@ button {
 .hero-btns {
   display: flex;
   gap: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 24px;
 }
 .btn-hero-primary {
   background: var(--primary);
@@ -865,6 +865,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
@@ -1818,8 +1820,8 @@ button {
   }
 
   /* City List Mobile */
-  .city-list {
-    grid-template-columns: repeat(2, 1fr) !important;
+  .cities-list-columns {
+    grid-template-columns: 1fr !important;
     gap: 12px;
   }
 
@@ -1850,7 +1852,11 @@ button {
   }
   .btn-red-cta, .btn-white-cta {
     width: 100%;
-    padding: 16px 24px;
+    padding: 16px 20px;
+    font-size: 16px;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
   }
 
   /* Footer Mobile */
@@ -1881,7 +1887,7 @@ button {
 }
 
 @media (max-width: 480px) {
-  .city-list {
+  .cities-list-columns {
     grid-template-columns: 1fr !important;
   }
   .hero h1 {
@@ -1959,12 +1965,7 @@ button {
   gap: 60px 40px;
 }
 
-/* Make the first item span 2 columns or center it */
-.why-choose-right .feature-item:first-child {
-  grid-column: span 2;
-  max-width: 400px;
-  margin: 0 auto;
-}
+
 
 .feature-item {
   display: flex;

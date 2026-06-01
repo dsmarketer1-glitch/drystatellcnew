@@ -8,9 +8,12 @@ function ServingAreas() {
   return (
     <section className="py-section-gap bg-surface-container-low">
       <div className="max-w-[1280px] mx-auto px-6">
+        <div className="text-center mb-16 reveal">
+          <h2 className="text-4xl md:text-5xl font-black text-secondary">Proudly Serving the DFW Metroplex</h2>
+        </div>
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
           <div className="area-category">
-            <h2 className="font-h2 text-h2 text-primary mb-6">Primary Service Areas – Older Homes & Established Communities</h2>
+            <h3 className="category-title">Primary DFW Service Areas</h3>
             <p className="text-body-lg mb-8 text-on-surface-variant">
               We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:
             </p>
@@ -30,7 +33,7 @@ function ServingAreas() {
           </div>
 
           <div className="area-category">
-            <h3 className="category-title mt-2">Additional DFW Metroplex Areas We Serve</h3>
+            <h3 className="category-title mt-2">Additional Areas We Serve</h3>
             <p className="text-body-lg mb-8 text-on-surface-variant">
               We also provide high-precision restoration and cleanup services to these growing communities across North Texas:
             </p>

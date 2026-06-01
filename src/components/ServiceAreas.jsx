@@ -12,7 +12,7 @@ const ServiceAreas = () => {
         <div className="areas-content-center reveal">
           <div className="text-center mb-12">
             <span className="sub-title" style={{ color: '#b6171e', letterSpacing: '2px' }}>LOCALIZED CARE</span>
-            <h2 className="areas-title mb-6">Serving Richland Hills & Surrounding Areas</h2>
+            <h2 className="areas-title mb-6">Proudly Serving the DFW Metroplex</h2>
             <p className="areas-description max-w-3xl mx-auto">
               Based in the heart of North Texas, our strategic location allows us to reach any disaster in the metroplex within an hour.
             </p>
@@ -20,7 +20,7 @@ const ServiceAreas = () => {
 
           <div className="areas-categories-grid">
             <div className="area-category">
-              <h3 className="category-title">Primary Service Areas – Older Homes & Established Communities</h3>
+              <h3 className="category-title">Primary DFW Service Areas</h3>
               <p className="category-desc">We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:</p>
               <div className="cities-list-columns">
                 <ul>
@@ -44,7 +44,7 @@ const ServiceAreas = () => {
             </div>
 
             <div className="area-category">
-              <h3 className="category-title">Additional DFW Metroplex Areas We Serve</h3>
+              <h3 className="category-title">Additional Areas We Serve</h3>
               <div className="cities-list-columns single-col">
                 <ul>
                   <li>Coppell</li>

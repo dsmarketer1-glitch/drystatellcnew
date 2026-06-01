@@ -2,19 +2,19 @@ import React from 'react';
 
 const Stats = () => {
   const stats = [
-    { label: 'Disaster Response Services', value: '365', suffix: 'Days' },
-    { label: 'Licensed & Certified', value: '100', suffix: '%' },
-    { label: 'Happy customers', value: '100', suffix: '+' },
-    { label: '5-star reviews', value: '50', suffix: '+' }
+    { label: 'Emergency Response', value: '24/7', suffix: '' },
+    { label: 'DFW Restoration Team', value: 'Locally Owned', suffix: '' },
+    { label: 'Mitigation & Reconstruction', value: 'Full-Service', suffix: '' },
+    { label: 'Across Dallas–Fort Worth', value: 'Fast Response', suffix: '' }
   ];
 
   return (
     <section className="stats-section py-20 bg-[#00123d] text-white">
       <div className="container">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
             <div key={index} className="stat-item text-center reveal" style={{ transitionDelay: `${index * 100}ms` }}>
-              <div className="text-4xl sm:text-5xl font-black mb-2 text-[#b6171e]">
+              <div className="text-3xl sm:text-4xl font-black mb-2 text-white">
                 {stat.value}{stat.suffix}
               </div>
               <p className="text-sm uppercase font-bold tracking-widest opacity-70">

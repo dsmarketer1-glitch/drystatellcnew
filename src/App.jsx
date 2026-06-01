@@ -24,7 +24,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="app">
+      <div className="app w-full overflow-x-hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

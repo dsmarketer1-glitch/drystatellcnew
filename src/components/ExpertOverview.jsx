@@ -14,27 +14,18 @@ function ExpertOverview() {
                 alt="Water restoration expert" 
                 className="w-full h-full object-cover"
               />
-              {/* Experience Badge integrated inside the image container for better alignment */}
-              <div className="absolute bottom-6 right-6 bg-[#b6171e] p-8 rounded-[32px] text-white shadow-2xl z-20 hidden md:block">
-                 <div className="text-4xl font-black mb-1">15+</div>
-                 <div className="text-[10px] font-bold uppercase tracking-widest leading-tight">Years of <br /> Excellence</div>
-              </div>
+              {/* Experience Badge removed as the company is new */}
             </div>
             {/* Background accent */}
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-[#f8f9fa] rounded-[40px] -z-0"></div>
           </div>
 
           <div className="w-full md:w-1/2 reveal" style={{ transitionDelay: '200ms' }}>
-            <span className="text-[#b6171e] font-black tracking-widest uppercase text-sm mb-4 block">Professional Restoration</span>
             <h2 className="text-3xl sm:text-5xl font-black text-[#00123d] leading-tight mb-8">
-              Professional Disaster Restoration <br />
-              <span className="text-gray-400">in Richland Hills</span>
+              Trusted Restoration Services Across DFW
             </h2>
-            <p className="text-gray-500 text-lg mb-6 leading-relaxed">
-              At DryState LLC, we specialize in turning disaster into recovery with speed, care, and unmatched expertise. Whether you’re facing water damage, fire aftermath, mold growth, or storm destruction, our certified professionals are available around the clock to bring your property — and your peace of mind — back to normal.
-            </p>
             <p className="text-gray-500 text-lg mb-10 leading-relaxed">
-              With years of experience serving families and businesses across the Richland Hills area, DryState is committed to restoring more than just buildings — we restore comfort, safety, and trust.
+              DryState provides emergency response, mitigation, cleanup, and reconstruction services for homeowners and businesses throughout the Dallas–Fort Worth area.
             </p>
 
             <div className="grid grid-cols-1 gap-6">
@@ -44,7 +35,7 @@ function ExpertOverview() {
                 </div>
                 <div>
                   <h4 className="text-[#00123d] font-bold text-xl mb-1">IICRC Certified Technicians</h4>
-                  <p className="text-gray-500 text-sm">Every team member undergoes rigorous training and industry certification.</p>
+                  <p className="text-gray-500 text-sm">Our restoration professionals are trained and certified through the IICRC.</p>
                 </div>
               </div>
               <div className="flex gap-5">
@@ -52,8 +43,8 @@ function ExpertOverview() {
                   <Target size={28} />
                 </div>
                 <div>
-                  <h4 className="text-[#00123d] font-bold text-xl mb-1">Precision Extraction</h4>
-                  <p className="text-gray-500 text-sm">We use the latest high-pressure extraction technology to remove water fast.</p>
+                  <h4 className="text-[#00123d] font-bold text-xl mb-1">Advanced Drying Equipment</h4>
+                  <p className="text-gray-500 text-sm">We use professional drying and moisture-control equipment to help prevent further damage.</p>
                 </div>
               </div>
               <div className="flex gap-5">
@@ -61,8 +52,8 @@ function ExpertOverview() {
                   <Award size={28} />
                 </div>
                 <div>
-                  <h4 className="text-[#00123d] font-bold text-xl mb-1">Guaranteed Results</h4>
-                  <p className="text-gray-500 text-sm">We stand behind our work with a comprehensive drying guarantee.</p>
+                  <h4 className="text-[#00123d] font-bold text-xl mb-1">Responsive Restoration Team</h4>
+                  <p className="text-gray-500 text-sm">We focus on clear communication, dependable service, and quality workmanship throughout the restoration process.</p>
                 </div>
               </div>
             </div>

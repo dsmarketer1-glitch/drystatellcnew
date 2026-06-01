@@ -20,7 +20,7 @@ const Hero = () => {
         >
           <div className="status-badge">
             <span className="dot"></span>
-            SERVING RICHLAND HILLS & NEARBY COMMUNITIES
+            24/7 EMERGENCY RESPONSE ACROSS DFW
           </div>
         </motion.div>
         
@@ -30,7 +30,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           Restoring What Matters Most,<br />
-          <span className="highlight">24/7 Emergency</span> Restoration.
+          <span className="highlight">24/7 Emergency Response</span> Across DFW.
         </motion.h1>
         
         <motion.p
@@ -39,7 +39,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="hero-subtext"
         >
-          Rapid, reliable, and compassionate recovery services for your home or business — any time, any day. Richland Hills' trusted disaster restoration experts.
+          When unexpected property damage occurs, our team is ready 24/7 to help protect your property and guide you through the recovery process.
         </motion.p>
         
         <motion.div 
@@ -53,27 +53,10 @@ const Hero = () => {
             Request Immediate Help
           </a>
           <Link to="/contact" className="btn btn-hero-secondary">
-            Book Online
+            Request Emergency Service
           </Link>
         </motion.div>
-        
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="hero-trust"
-        >
-          <div className="avatar-group">
-            <div className="avatar">JS</div>
-            <div className="avatar">MT</div>
-            <div className="avatar">LR</div>
-            <div className="avatar count">+500</div>
-          </div>
-          <div className="trust-text">
-            <div className="stars">5.0 Star Rating</div>
-            <div className="trusted">Trusted by 500+ local homeowners</div>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );

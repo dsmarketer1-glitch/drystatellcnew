@@ -5,27 +5,27 @@ const WhyChooseUs = () => {
   const features = [
     {
       title: '24/7 Emergency Response',
-      desc: 'No matter the time or day, our team is ready to respond to your emergency immediately.',
+      desc: 'Available day and night for rapid emergency response across DFW.',
       icon: <Phone size={32} strokeWidth={1.5} />
     },
     {
-      title: 'Certified, Licensed, and Insured Experts',
-      desc: 'Our technicians are fully trained, certified, and insured to handle all types of restoration challenges.',
+      title: 'Trained & Certified Professionals',
+      desc: 'Our team is trained and equipped to handle water, fire, storm, and environmental restoration projects with professionalism and care.',
       icon: <BadgeCheck size={32} strokeWidth={1.5} />
     },
     {
       title: 'Transparent Pricing, No Surprises',
-      desc: 'We provide clear, upfront estimates with no hidden fees, so you always know what to expect.',
+      desc: 'We provide clear communication and detailed estimates so you know what to expect throughout the restoration process.',
       icon: <CircleDollarSign size={32} strokeWidth={1.5} />
     },
     {
-      title: 'Complete Restoration Services',
-      desc: 'From damage assessment to final repairs, we manage every stage of your property\'s full recovery.',
+      title: 'Full-Service Restoration',
+      desc: 'From emergency mitigation to reconstruction, we manage every phase of the restoration process.',
       icon: <Home size={32} strokeWidth={1.5} />
     },
     {
-      title: 'State-of-the-Art Equipment',
-      desc: 'We use advanced drying, cleaning, and restoration technology to ensure thorough and efficient property recovery.',
+      title: 'Advanced Drying Technology',
+      desc: 'We use professional drying, cleaning, and moisture detection equipment to help restore properties efficiently and effectively.',
       icon: <Zap size={32} strokeWidth={1.5} />
     }
   ];
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="why-choose-content">
           <div className="why-choose-left reveal">
-            <h2>WHAT MAKES US DIFFERENT?</h2>
+            <h2>The DryState Difference</h2>
           </div>
           
           <div className="why-choose-right">

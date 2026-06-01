@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
-import Ticker from '../components/Ticker';
 import ExpertOverview from '../components/ExpertOverview';
 import ServicesGrid from '../components/ServicesGrid';
 import RapidResponse from '../components/RapidResponse';
@@ -36,7 +35,6 @@ function Home() {
   return (
     <main>
       <Hero />
-      <Ticker />
       <ExpertOverview />
       <ServicesGrid />
       <RapidResponse />
