@@ -1,7 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Footer from '../components/Footer';
 
+// EmailJS credentials — replace these with your own from https://dashboard.emailjs.com
+const EMAILJS_SERVICE_ID = 'service_e1ugpf3';
+const EMAILJS_TEMPLATE_ID = 'template_r2i68b6';
+const EMAILJS_PUBLIC_KEY = 'oy9zG3K10fg8umT6L';
+
 const Contact = () => {
+  const formRef = useRef(null);
+  // status: 'idle' | 'sending' | 'success' | 'error'
+  const [status, setStatus] = useState('idle');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    emailjs
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, {
+        publicKey: EMAILJS_PUBLIC_KEY,
+      })
+      .then(() => {
+        setStatus('success');
+        formRef.current?.reset();
+      })
+      .catch((err) => {
+        console.error('EmailJS error:', err);
+        setStatus('error');
+      });
+  };
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -80,24 +108,24 @@ const Contact = () => {
             <div className="w-full md:w-[60%] bg-white p-6 md:p-10 border border-slate-200 rounded-2xl shadow-sm">
               <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-4">Request an Inspection</h2>
               <p className="text-[15px] md:text-[16px] text-[#44464f] mb-10 leading-relaxed">For non-emergencies, fill out the form below and a restoration specialist will contact you within 2 hours to schedule a free site assessment.</p>
-              <form className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-[10px] md:text-[11px] font-black text-[#00123d] tracking-widest uppercase">FULL NAME</label>
-                    <input className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none" placeholder="John Doe" type="text"/>
+                    <input name="full_name" required className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none" placeholder="John Doe" type="text"/>
                   </div>
                   <div className="space-y-2">
                     <label className="text-[10px] md:text-[11px] font-black text-[#00123d] tracking-widest uppercase">PHONE NUMBER</label>
-                    <input className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none" placeholder="(214) 000-0000" type="tel"/>
+                    <input name="phone" required className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none" placeholder="(214) 000-0000" type="tel"/>
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] md:text-[11px] font-black text-[#00123d] tracking-widest uppercase">EMAIL ADDRESS</label>
-                  <input className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none" placeholder="john@example.com" type="email"/>
+                  <input name="email" required className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none" placeholder="john@example.com" type="email"/>
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] md:text-[11px] font-black text-[#00123d] tracking-widest uppercase">SERVICE TYPE</label>
-                  <select className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none cursor-pointer">
+                  <select name="service_type" className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none cursor-pointer">
                     <option>Water Damage Restoration</option>
                     <option>Fire & Smoke Damage</option>
                     <option>Mold Remediation</option>
@@ -106,11 +134,28 @@ const Contact = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] md:text-[11px] font-black text-[#00123d] tracking-widest uppercase">MESSAGE / LOSS DESCRIPTION</label>
-                  <textarea className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none resize-none" placeholder="Please describe the situation..." rows="4"></textarea>
+                  <textarea name="message" className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none resize-none" placeholder="Please describe the situation..." rows="4"></textarea>
                 </div>
-                <button className="w-full bg-[#00123d] text-white py-5 rounded-lg font-black text-[14px] md:text-[16px] tracking-widest transition-all hover:bg-[#0f265c] uppercase">
-                  SEND MESSAGE
+                <button
+                  type="submit"
+                  disabled={status === 'sending'}
+                  className="w-full bg-[#00123d] text-white py-5 rounded-lg font-black text-[14px] md:text-[16px] tracking-widest transition-all hover:bg-[#0f265c] uppercase disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {status === 'sending' ? 'SENDING...' : 'SEND MESSAGE'}
                 </button>
+
+                {status === 'success' && (
+                  <div className="flex items-center gap-3 bg-green-50 border border-green-200 text-green-800 p-4 rounded-lg text-[14px] md:text-[15px]">
+                    <span className="material-symbols-outlined">check_circle</span>
+                    <span>Thank you! Your request has been sent. A restoration specialist will contact you within 2 hours.</span>
+                  </div>
+                )}
+                {status === 'error' && (
+                  <div className="flex items-center gap-3 bg-red-50 border border-red-200 text-red-800 p-4 rounded-lg text-[14px] md:text-[15px]">
+                    <span className="material-symbols-outlined">error</span>
+                    <span>Something went wrong. Please call us at 214-785-1130 or try again.</span>
+                  </div>
+                )}
               </form>
             </div>
 
