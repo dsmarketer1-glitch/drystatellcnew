@@ -1,5 +1,32 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { getCity, locations } from '../data/locations';
+
+// Renders a city name as a link to its dedicated page when one exists,
+// otherwise as plain text.
+const CityItem = ({ city, dotClass }) => {
+  const slug = city.toLowerCase().replace(/\s+/g, '-');
+  const hasPage = Boolean(getCity(slug));
+  const content = (
+    <>
+      <span className={`w-1.5 h-1.5 ${dotClass} rounded-full shrink-0`}></span>
+      {city}
+    </>
+  );
+  return hasPage ? (
+    <li>
+      <Link
+        to={`/${slug}`}
+        className="flex items-center gap-3 text-gray-600 hover:text-[#b6171e] text-[15px] font-bold no-underline transition-colors"
+      >
+        {content}
+      </Link>
+    </li>
+  ) : (
+    <li className="flex items-center gap-3 text-gray-600 text-[15px] font-bold">{content}</li>
+  );
+};
 
 const AreasWeServe = () => {
   useEffect(() => {
@@ -128,10 +155,7 @@ const AreasWeServe = () => {
                 ].map((col, idx) => (
                   <ul key={idx} className="space-y-4">
                     {col.map((city, cIdx) => (
-                      <li key={cIdx} className="flex items-center gap-3 text-gray-600 text-[15px] font-bold">
-                        <span className="w-1.5 h-1.5 bg-[#D32F2F] rounded-full shrink-0"></span>
-                        {city}
-                      </li>
+                      <CityItem key={cIdx} city={city} dotClass="bg-[#D32F2F]" />
                     ))}
                   </ul>
                 ))}
@@ -145,13 +169,49 @@ const AreasWeServe = () => {
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
                 {["Coppell", "Grapevine", "Keller", "Southlake", "Colleyville", "Lewisville", "Dallas", "Surrounding DFW communities"].map((city, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-gray-600 text-[15px] font-bold">
-                    <span className="w-1.5 h-1.5 bg-[#D32F2F]/60 rounded-full shrink-0"></span>
-                    {city}
-                  </li>
+                  <CityItem key={idx} city={city} dotClass="bg-[#D32F2F]/60" />
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location Pages Directory */}
+      <section className="py-16 md:py-24 bg-[#f8f9fa] reveal border-t border-slate-200">
+        <div className="max-w-[1280px] mx-auto px-6">
+          <div className="text-center mb-12 md:mb-16">
+            <span className="text-[#b6171e] text-[11px] md:text-[12px] font-bold tracking-[0.2em] uppercase mb-4 block">EXPLORE BY LOCATION</span>
+            <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-4 leading-[1.2]">Dedicated Restoration Pages Near You</h2>
+            <p className="text-[16px] md:text-[18px] text-[#44464f] max-w-2xl mx-auto">Find rapid-response water, fire, and storm damage restoration for your specific city or neighborhood.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {locations.map((city) => (
+              <div key={city.slug} className="bg-white p-6 md:p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <Link
+                  to={`/${city.slug}`}
+                  className="flex items-center justify-between mb-3 group no-underline"
+                >
+                  <h3 className="text-[18px] md:text-[20px] font-['Work_Sans'] font-bold text-[#00123d] group-hover:text-[#b6171e] transition-colors">{city.name}</h3>
+                  <span className="material-symbols-outlined text-[#b6171e] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </Link>
+                {city.communities && city.communities.length > 0 ? (
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {city.communities.map((c) => (
+                      <Link
+                        key={c.slug}
+                        to={`/${city.slug}/${c.slug}`}
+                        className="text-[12px] font-bold text-[#44464f] bg-[#f8f9fa] border border-slate-200 hover:border-[#00123d] hover:text-[#00123d] px-3 py-1.5 rounded-full transition-all no-underline"
+                      >
+                        {c.name}
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-[13px] text-[#757681] font-bold uppercase tracking-wider">{city.county}</p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>

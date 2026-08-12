@@ -17,6 +17,7 @@ import WaterDamage from './pages/services/WaterDamage';
 import AreasWeServe from './pages/AreasWeServe';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import LocationPage from './pages/LocationPage';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
 
@@ -44,6 +45,11 @@ function App() {
           <Route path="/services/air-duct-cleaning" element={<AirDuctCleaning />} />
           <Route path="/services/carpet-cleaning" element={<CarpetCleaning />} />
           <Route path="/services/tile-grout-cleaning" element={<TileGroutCleaning />} />
+
+          {/* Location pages (city + community). Static routes above rank higher,
+              so these only match location slugs. Unknown slugs redirect home. */}
+          <Route path="/:city" element={<LocationPage />} />
+          <Route path="/:city/:community" element={<LocationPage />} />
         </Routes>
       </div>
     </Router>

@@ -1,10 +1,10 @@
 import React from 'react';
-import { MapPin, Building2, CheckCircle } from 'lucide-react';
+import CityName from './CityName';
 
 const ServiceAreas = () => {
-  const cities = [
-    'Richland Hills', 'Fort Worth', 'Arlington', 'Dallas'
-  ];
+  const primaryAreas1 = ['Irving', 'Grand Prairie', 'Carrollton', 'Duncanville', 'Richland Hills', 'North Richland Hills', 'Bedford'];
+  const primaryAreas2 = ['Euless', 'Hurst', 'Haltom City', 'Arlington', 'Fort Worth', 'Farmers Branch'];
+  const additionalAreas = ['Coppell', 'Grapevine', 'Keller', 'Southlake', 'Colleyville', 'Lewisville', 'Dallas', 'Surrounding DFW communities'];
 
   return (
     <section className="service-areas section" id="areas">
@@ -24,21 +24,14 @@ const ServiceAreas = () => {
               <p className="category-desc">We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:</p>
               <div className="cities-list-columns">
                 <ul>
-                  <li>Irving</li>
-                  <li>Grand Prairie</li>
-                  <li>Carrollton</li>
-                  <li>Duncanville</li>
-                  <li>Richland Hills</li>
-                  <li>North Richland Hills</li>
-                  <li>Bedford</li>
+                  {primaryAreas1.map((area, i) => (
+                    <li key={i}><CityName name={area} /></li>
+                  ))}
                 </ul>
                 <ul>
-                  <li>Euless</li>
-                  <li>Hurst</li>
-                  <li>Haltom City</li>
-                  <li>Arlington</li>
-                  <li>Fort Worth</li>
-                  <li>Farmers Branch</li>
+                  {primaryAreas2.map((area, i) => (
+                    <li key={i}><CityName name={area} /></li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -47,14 +40,9 @@ const ServiceAreas = () => {
               <h3 className="category-title">Additional Areas We Serve</h3>
               <div className="cities-list-columns single-col">
                 <ul>
-                  <li>Coppell</li>
-                  <li>Grapevine</li>
-                  <li>Keller</li>
-                  <li>Southlake</li>
-                  <li>Colleyville</li>
-                  <li>Lewisville</li>
-                  <li>Dallas</li>
-                  <li>Surrounding DFW communities</li>
+                  {additionalAreas.map((area, i) => (
+                    <li key={i}><CityName name={area} /></li>
+                  ))}
                 </ul>
               </div>
             </div>

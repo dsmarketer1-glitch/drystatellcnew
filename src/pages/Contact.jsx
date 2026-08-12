@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Footer from '../components/Footer';
+import CityName from '../components/CityName';
 
 // EmailJS credentials — replace these with your own from https://dashboard.emailjs.com
 const EMAILJS_SERVICE_ID = 'service_e1ugpf3';
@@ -263,7 +264,7 @@ const Contact = () => {
                     {col.map((city, cIdx) => (
                       <li key={cIdx} className="flex items-center gap-3 text-[#44464f] text-[15px] font-bold">
                         <span className="w-1.5 h-1.5 bg-[#b6171e] rounded-full shrink-0"></span>
-                        {city}
+                        <CityName name={city} className="text-[#44464f] hover:text-[#b6171e] no-underline transition-colors" />
                       </li>
                     ))}
                   </ul>
@@ -280,7 +281,7 @@ const Contact = () => {
                 {["Coppell", "Grapevine", "Keller", "Southlake", "Colleyville", "Lewisville", "Dallas", "Surrounding DFW communities"].map((city, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-[#44464f] text-[15px] font-bold">
                     <span className="w-1.5 h-1.5 bg-[#b6171e]/60 rounded-full shrink-0"></span>
-                    {city}
+                    <CityName name={city} className="text-[#44464f] hover:text-[#b6171e] no-underline transition-colors" />
                   </li>
                 ))}
               </ul>

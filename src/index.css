@@ -1421,6 +1421,16 @@ button {
   border-radius: 50%;
 }
 
+.cities-list-columns li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cities-list-columns li a:hover {
+  color: var(--red);
+}
+
 /* Stats Section */
 .stats-section {
   position: relative;

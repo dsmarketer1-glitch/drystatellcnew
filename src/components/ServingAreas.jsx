@@ -1,4 +1,5 @@
 import React from 'react';
+import CityName from './CityName';
 
 function ServingAreas() {
   const primaryAreas1 = ["Irving", "Grand Prairie", "Carrollton", "Duncanville", "Richland Hills", "North Richland Hills", "Bedford"];
@@ -21,12 +22,12 @@ function ServingAreas() {
             <div className="cities-list-columns">
               <ul>
                 {primaryAreas1.map((area, index) => (
-                  <li key={index}>{area}</li>
+                  <li key={index}><CityName name={area} /></li>
                 ))}
               </ul>
               <ul>
                 {primaryAreas2.map((area, index) => (
-                  <li key={index}>{area}</li>
+                  <li key={index}><CityName name={area} /></li>
                 ))}
               </ul>
             </div>
@@ -40,7 +41,7 @@ function ServingAreas() {
             <div className="cities-list-columns single-col">
               <ul>
                 {additionalAreas.map((area, index) => (
-                  <li key={index}>{area}</li>
+                  <li key={index}><CityName name={area} /></li>
                 ))}
               </ul>
             </div>
