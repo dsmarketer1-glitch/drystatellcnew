@@ -1459,35 +1459,23 @@ button {
 .footer {
   background: var(--white);
   padding: 80px 0 0;
-  border-top: 4px solid var(--primary);
+  border-top: 4px solid var(--secondary);
   color: var(--secondary);
-}
-
-.footer-top-logos {
-  padding: 40px 0;
-  border-bottom: 1px solid #f1f5f9;
-  margin-bottom: 60px;
 }
 
 .logos-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 64px;
   flex-wrap: wrap;
-}
-
-.cert-logo {
-  height: 100px;
-  width: auto;
-  object-fit: contain;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-  gap: 40px;
-  margin-bottom: 60px;
+  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  margin-bottom: 24px;
 }
 
 .footer-logo-link {
@@ -1496,95 +1484,126 @@ button {
 }
 
 .footer-logo {
-  height: 120px;
+  height: 100px;
   width: auto;
   object-fit: contain;
 }
 
 .brand-content {
   color: var(--secondary);
+  max-width: 340px;
 }
 
 .brand-tagline {
   font-size: 20px;
-  font-weight: 900;
-  margin-bottom: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
   color: var(--secondary);
+  line-height: 1.3;
 }
 
 .brand-mission {
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.5;
-  font-size: 15px;
-}
-
-.brand-description {
-  font-size: 13px;
-  line-height: 1.7;
-  opacity: 0.8;
   font-weight: 500;
+  line-height: 1.7;
+  font-size: 15px;
+  color: var(--text-gray);
 }
 
 .footer-links h4 {
-  font-size: 15px;
-  font-weight: 900;
+  font-size: 13px;
+  font-weight: 800;
   color: var(--secondary);
-  margin-bottom: 32px;
-  letter-spacing: 1px;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 .footer-links ul {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .footer-links a {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   color: var(--text-gray);
-  transition: all 0.3s;
+  transition: color 0.25s ease;
 }
 
 .footer-links a:hover {
   color: var(--primary);
-  padding-left: 5px;
 }
 
+/* Contact column */
 .contact-info-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
 }
 
-.contact-item strong {
-  display: block;
-  font-size: 13px;
-  margin-bottom: 4px;
+.contact-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.contact-phone {
+  font-size: 24px;
+  font-weight: 900;
   color: var(--secondary);
+  display: inline-block;
+  transition: color 0.25s ease;
 }
 
-.contact-item p, .contact-link {
-  font-size: 13px;
-  line-height: 1.6;
+.contact-phone:hover {
+  color: var(--primary);
+}
+
+.contact-email {
+  font-size: 15px;
+  color: var(--text-gray);
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.contact-email:hover {
+  color: var(--primary);
+}
+
+.contact-line {
+  font-size: 15px;
   color: var(--text-gray);
   font-weight: 500;
 }
 
-.contact-link {
-  display: inline-block;
-  transition: color 0.3s;
+/* Certifications & Community band */
+.footer-certs {
+  text-align: center;
+  padding: 48px 0 56px;
 }
 
-.contact-link:hover {
-  color: var(--primary);
+.footer-certs h4 {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 32px;
 }
 
+.footer-certs .cert-logo {
+  height: 72px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Bottom bar */
 .footer-bottom {
-  padding: 40px 0;
-  border-top: 1px solid #f1f5f9;
+  padding: 28px 0 40px;
+  border-top: 1px solid #eef1f5;
 }
 
 .bottom-content {
@@ -1592,39 +1611,51 @@ button {
   justify-content: space-between;
   align-items: center;
   color: var(--text-gray);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .social-links {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .social-links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
   color: var(--secondary);
-  transition: all 0.3s;
+  transition: all 0.25s ease;
 }
 
 .social-links a:hover {
-  color: var(--primary);
+  background: var(--secondary);
+  color: #ffffff;
   transform: translateY(-3px);
 }
 
 @media (max-width: 1024px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 }
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
   }
-  .footer-bottom {
+  .bottom-content {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     text-align: center;
+  }
+  .footer-certs .logos-wrapper {
+    gap: 40px;
   }
 }
 

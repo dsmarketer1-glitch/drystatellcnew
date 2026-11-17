@@ -5,16 +5,6 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Top Certification Logos */}
-      <div className="footer-top-logos">
-        <div className="container">
-          <div className="logos-wrapper">
-            <img src="/assets/iicrc.png" alt="IICRC Certified" className="cert-logo" />
-            <img src="/assets/boys-girls-clubs.png" alt="Boys & Girls Clubs" className="cert-logo" />
-          </div>
-        </div>
-      </div>
-
       <div className="container">
         <div className="footer-grid">
           {/* Brand Column */}
@@ -23,66 +13,60 @@ const Footer = () => {
               <img src="/assets/drystate-logo.png" alt="Dry State LLC" className="footer-logo" />
             </Link>
             <div className="brand-content">
-              <h3 className="brand-tagline">Restoring Families, Building Communities</h3>
+              <h3 className="brand-tagline">Trusted Restoration Services Across DFW</h3>
               <p className="brand-mission">
-                Join us in our mission, and together, let’s build a legacy of hope, trust, and unwavering support.
-              </p>
-              <p className="brand-description">
-                At DryState, we offer expert restoration for water, flood, and fire damage. Our experienced team uses advanced technology for efficient cleanup and repairs, working closely with you and your insurance provider for a smooth process.
+                DryState provides professional water, fire, storm, and reconstruction services for homeowners and businesses throughout the Dallas–Fort Worth area.
               </p>
             </div>
           </div>
-          
+
           {/* Services Column */}
           <div className="footer-links">
-            <h4>OUR SERVICES</h4>
+            <h4>Our Services</h4>
             <ul>
               <li><Link to="/services/water-damage">Water Damage Restoration</Link></li>
-              <li><Link to="/services/water-removal">Water Removal Services</Link></li>
-              <li><Link to="/services/water-damage">Water Damage Repairs</Link></li>
-              <li><Link to="/services/flood-damage">Flood Damage Cleanup</Link></li>
-              <li><Link to="/services/fire-damage">Fire Damage Restoration</Link></li>
-              <li><Link to="/services/fire-damage">Fire Damage Repair</Link></li>
-              <li><Link to="/services/smoke-damage">Smoke Damage Cleaning</Link></li>
-              <li><Link to="/services/storm-damage">Storm Damage Restoration</Link></li>
-              <li><Link to="/services/sewage-cleanup">Sewage Damage Cleanup</Link></li>
-              <li><Link to="/services/mold-removal">Mold Removal Services</Link></li>
-              <li><Link to="/services/content-cleaning">Content Cleaning and Packing</Link></li>
-              <li><Link to="/services/reconstruction">Reconstruction Service</Link></li>
+              <li><Link to="/services/fire-damage">Fire &amp; Smoke Damage</Link></li>
+              <li><Link to="/services/storm-damage">Storm Damage Cleanup</Link></li>
+              <li><Link to="/services/sewage-cleanup">Sewage Cleanup</Link></li>
+              <li><Link to="/services/water-damage">Mold Remediation</Link></li>
+              <li><Link to="/services/reconstruction">Reconstruction</Link></li>
+              <li><Link to="/services/air-duct-cleaning">Air Duct Cleaning</Link></li>
+              <li><Link to="/services/content-cleaning">Content Cleaning</Link></li>
             </ul>
           </div>
-          
-          {/* About Column */}
+
+          {/* Company Column */}
           <div className="footer-links">
-            <h4>ABOUT DRYSTATE</h4>
+            <h4>Company</h4>
             <ul>
               <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/areas-we-serve">Service Areas</Link></li>
+              <li><Link to="/reviews">Customer Reviews</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
-              <li><Link to="/services">Our Services</Link></li>
               <li><Link to="/privacy">Privacy Policy</Link></li>
-              <li><Link to="/reviews">Reviews</Link></li>
             </ul>
           </div>
-          
+
           {/* Contact Column */}
           <div className="footer-links contact-col">
-            <h4>CONTACT US</h4>
+            <h4>Contact Us</h4>
             <div className="contact-info-list">
-              <div className="contact-item">
-                <strong>Mailing Address:</strong>
-                <p>1527 W State Hwy 114 | Unit #: 500-116 | Grapevine, TX 76051</p>
-              </div>
-              <div className="contact-item">
-                <strong>Office Location:</strong>
-                <p>7410 Boulevard 26 | Unit #: S | Richland Hills, TX 76180</p>
-              </div>
-              <div className="contact-item">
-                <a href="mailto:Office@DryStateLLC.com" className="contact-link">Office@DryStateLLC.com</a>
-              </div>
-              <div className="contact-item">
-                <a href="tel:2147851130" className="contact-link">214-785-1130</a>
-              </div>
+              <span className="contact-eyebrow">24/7 Emergency Response</span>
+              <a href="tel:2147851130" className="contact-phone">214-785-1130</a>
+              <a href="mailto:office@drystatellc.com" className="contact-email">office@drystatellc.com</a>
+              <span className="contact-line">Richland Hills, TX</span>
+              <span className="contact-line">Serving the Dallas–Fort Worth Area</span>
             </div>
+          </div>
+        </div>
+
+        {/* Certifications & Community */}
+        <div className="footer-certs">
+          <h4>Industry Certifications &amp; Community Support</h4>
+          <div className="logos-wrapper">
+            <img src="/assets/iicrc.png" alt="IICRC Certified Firm" className="cert-logo" />
+            <img src="/assets/boys-girls-clubs.png" alt="Boys &amp; Girls Clubs Community Partner" className="cert-logo" />
           </div>
         </div>
         
