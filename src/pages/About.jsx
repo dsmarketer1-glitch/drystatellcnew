@@ -82,59 +82,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* 3. Our History (Timeline) */}
-      <section className="bg-[#f8f9fa] py-24 reveal">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-[#0F265C] text-3xl md:text-4xl font-black mb-4">A Local Legacy</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Founded in the heart of Richland Hills, DryState Restoration grew from a family-owned single-truck operation into North Texas's most trusted restoration specialist.
-            </p>
-          </div>
-          
-          <div className="relative max-w-5xl mx-auto">
-            {/* Vertical Line */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[1px] bg-gray-200 hidden md:block"></div>
-            
-            <div className="space-y-12 md:space-y-0">
-              {/* Timeline Item 1: 2009 (Right) */}
-              <div className="relative md:flex md:justify-end md:mb-12 group">
-                {/* Icon Box on the line */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-8 w-12 h-12 bg-[#00123d] rounded-[4px] items-center justify-center z-10 shadow-lg">
-                  <span className="material-symbols-outlined text-white text-2xl">home</span>
-                </div>
-                
-                {/* Content Card */}
-                <div className="md:w-[45%] bg-white p-8 rounded-[4px] border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                  <div className="text-[#D32F2F] font-black text-xl mb-2">2009</div>
-                  <h4 className="text-[#0F265C] text-xl font-bold mb-4">The Foundation</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    DryState Restoration begins operations in Arlington with a focus on localized water damage restoration and residential mold mitigation.
-                  </p>
-                </div>
-              </div>
-
-              {/* Timeline Item 2: 2016 (Left) */}
-              <div className="relative md:flex md:justify-start group">
-                {/* Icon Box on the line */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-8 w-12 h-12 bg-[#00123d] rounded-[4px] items-center justify-center z-10 shadow-lg">
-                  <span className="material-symbols-outlined text-white text-2xl">trending_up</span>
-                </div>
-                
-                {/* Content Card */}
-                <div className="md:w-[45%] bg-white p-8 rounded-[4px] border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                  <div className="text-[#D32F2F] font-black text-xl mb-2">2016</div>
-                  <h4 className="text-[#0F265C] text-xl font-bold mb-4">Expansion & Certification</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Acquired high-capacity LGR dehumidifiers and became a full IICRC Certified Firm, expanding services to fire and storm damage.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* 5. Core Values */}
       <section className="bg-[#00123d] py-16 md:py-24 text-white reveal">
         <div className="max-w-[1280px] mx-auto px-6">
