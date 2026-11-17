@@ -6,7 +6,7 @@ function ServicePageFooter() {
     <footer className="w-full py-12 border-t border-slate-200 mt-20 bg-slate-50 text-slate-500">
       <div className="max-w-[1280px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="col-span-1 md:col-span-1">
-          <div className="text-lg font-bold text-blue-900 mb-4">Dry State LLC</div>
+          <div className="text-lg font-bold text-blue-900 mb-4">DryState LLC</div>
           <p className="text-sm text-slate-500 mb-4">Richland Hills' most trusted name in emergency restoration. IICRC Certified and family-owned.</p>
           <div className="flex gap-4">
             <span className="material-symbols-outlined text-slate-400" data-icon="facebook">social_leaderboard</span>
@@ -48,7 +48,7 @@ function ServicePageFooter() {
         </div>
       </div>
       <div className="max-w-[1280px] mx-auto px-6 mt-12 pt-8 border-t border-slate-200 text-center">
-        <p className="text-sm text-slate-500">© 2024 Dry State LLC. All Rights Reserved. IICRC Certified Firm.</p>
+        <p className="text-sm text-slate-500">© 2024 DryState LLC. All Rights Reserved. IICRC Certified Firm.</p>
       </div>
     </footer>
   );

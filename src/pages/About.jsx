@@ -37,7 +37,7 @@ const About = () => {
         <div className="container relative z-10 max-w-4xl reveal px-4 mx-auto text-center">
           <span className="text-white/80 uppercase mb-4 block font-bold tracking-[0.2em] text-[10px] md:text-[12px]">Trusted North Texas Restoration</span>
           <h1 className="text-[28px] md:text-[42px] font-['Work_Sans'] font-bold text-white mb-6 leading-[1.2] tracking-[-0.01em]">The Hands Behind Your Recovery</h1>
-          <p className="text-[16px] md:text-[18px] text-white/90 max-w-xl mx-auto leading-[1.6]">Providing resilient stability to Richland Hills and Arlington property owners during their most challenging moments.</p>
+          <p className="text-[16px] md:text-[18px] text-white/90 max-w-xl mx-auto leading-[1.6]">Providing resilient stability to property owners across the Dallas–Fort Worth metroplex during their most challenging moments.</p>
         </div>
       </section>
 
@@ -88,7 +88,7 @@ const About = () => {
           <div className="text-center mb-20">
             <h2 className="text-[#0F265C] text-3xl md:text-4xl font-black mb-4">A Local Legacy</h2>
             <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Founded in the heart of Richland Hills, Dry State LLC grew from a family-owned single-truck operation into North Texas's most trusted restoration specialist.
+              Founded in the heart of Richland Hills, DryState Restoration grew from a family-owned single-truck operation into North Texas's most trusted restoration specialist.
             </p>
           </div>
           
@@ -109,7 +109,7 @@ const About = () => {
                   <div className="text-[#D32F2F] font-black text-xl mb-2">2009</div>
                   <h4 className="text-[#0F265C] text-xl font-bold mb-4">The Foundation</h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Dry State LLC begins operations in Arlington with a focus on localized water damage restoration and residential mold mitigation.
+                    DryState Restoration begins operations in Arlington with a focus on localized water damage restoration and residential mold mitigation.
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const About = () => {
       <section className="bg-[#00123d] py-16 md:py-24 text-white reveal">
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-['Work_Sans'] font-bold mb-4">The Pillars of Dry State</h2>
+            <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-['Work_Sans'] font-bold mb-4">The Pillars of DryState</h2>
             <p className="text-white/70 max-w-xl mx-auto text-sm md:text-base">Our culture is built on four non-negotiable principles that guide every technician on every job site.</p>
           </div>
           <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap gap-8">
@@ -189,10 +189,10 @@ const About = () => {
         </div>
       </section>
 
-      {/* 7. The Dry State Difference */}
+      {/* 7. The DryState Difference */}
       <section className="bg-[#f8f9fa] py-24 reveal">
         <div className="max-w-[1280px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-black text-[#0F265C] mb-16 text-center">The Dry State Difference</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0F265C] mb-16 text-center">The DryState Difference</h2>
           
           <div className="space-y-8">
             {/* Row 1: 2 columns */}

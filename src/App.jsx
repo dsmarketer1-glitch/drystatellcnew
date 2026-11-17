@@ -18,6 +18,7 @@ import AreasWeServe from './pages/AreasWeServe';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import LocationPage from './pages/LocationPage';
+import Privacy from './pages/Privacy';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/areas-we-serve" element={<AreasWeServe />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/services" element={<WaterDamage />} />
           <Route path="/services/water-damage" element={<WaterDamage />} />
           <Route path="/services/fire-damage" element={<FireDamage />} />

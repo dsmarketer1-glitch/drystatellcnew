@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="footer-brand">
             <Link to="/" className="footer-logo-link">
-              <img src="/assets/drystate-logo.png" alt="Dry State LLC" className="footer-logo" />
+              <img src="/assets/drystate-logo.png" alt="DryState LLC" className="footer-logo" />
             </Link>
             <div className="brand-content">
               <h3 className="brand-tagline">Trusted Restoration Services Across DFW</h3>
@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="contact-info-list">
               <span className="contact-eyebrow">24/7 Emergency Response</span>
               <a href="tel:2147851130" className="contact-phone">214-785-1130</a>
-              <a href="mailto:office@drystatellc.com" className="contact-email">office@drystatellc.com</a>
+              <a href="mailto:texas@drystatellc.com" className="contact-email">texas@drystatellc.com</a>
               <span className="contact-line">Richland Hills, TX</span>
               <span className="contact-line">Serving the Dallas–Fort Worth Area</span>
             </div>
@@ -75,14 +75,17 @@ const Footer = () => {
           <div className="bottom-content">
             <p>© 2026 DryState, LLC. All rights reserved.</p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook">
+              <a href="https://www.facebook.com/drystatewatercleanup/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com/drystate_water_cleanup/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
               </a>
-              <a href="#" aria-label="Youtube">
+              <a href="https://www.youtube.com/@DryStateWaterCleanup" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.02C5.12 19.47 12 19.47 12 19.47s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.94-1.94 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </a>
+              <a href="https://maps.app.goo.gl/RjjgLFHP9CA5GMGaA" target="_blank" rel="noopener noreferrer" aria-label="Google Business Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
               </a>
             </div>
           </div>

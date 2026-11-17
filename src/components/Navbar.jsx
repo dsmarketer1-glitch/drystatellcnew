@@ -40,7 +40,7 @@ function Navbar() {
           <Link to="/" className="flex items-center group z-[80]">
             <img 
               src="/assets/drystate-logo-header.png" 
-              alt="Dry State LLC" 
+              alt="DryState LLC" 
               className="h-[40px] sm:h-[60px] lg:h-[85px] w-auto object-contain"
             />
           </Link>

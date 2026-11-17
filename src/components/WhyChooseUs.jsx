@@ -36,6 +36,7 @@ const WhyChooseUs = () => {
         <div className="why-choose-content">
           <div className="why-choose-left reveal">
             <h2>The DryState Difference</h2>
+            <p>Why DFW homeowners and businesses trust us to restore what matters most — with speed, care, and certified expertise.</p>
           </div>
           
           <div className="why-choose-right">
@@ -54,11 +55,6 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
-      </div>
-      
-      {/* Background Watermark Logo */}
-      <div className="watermark-logo">
-        <img src="/assets/logo.png" alt="" />
       </div>
     </section>
   );

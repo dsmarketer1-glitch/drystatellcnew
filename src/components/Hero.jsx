@@ -50,7 +50,7 @@ const Hero = () => {
         >
           <a href="tel:2147851130" className="btn btn-hero-primary">
             <span className="material-symbols-outlined">bolt</span>
-            Request Immediate Help
+            Call 214-785-1130
           </a>
           <Link to="/contact" className="btn btn-hero-secondary">
             Request Emergency Service

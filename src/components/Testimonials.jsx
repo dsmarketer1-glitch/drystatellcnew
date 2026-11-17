@@ -1,25 +1,28 @@
-import React from 'react';
-import { Star, CheckCircle2 } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Star } from 'lucide-react';
+
+// Featurable Google Reviews widget — pulls live reviews from the GBP profile.
+const FEATURABLE_WIDGET_ID = '369be8b0-2386-44d4-abd7-ef5aa5e1bb03';
+const FEATURABLE_SRC = 'https://featurable.com/assets/bundle.js';
 
 const Testimonials = () => {
-  const reviews = [
-    {
-      name: 'Marcus Thornton',
-      role: 'HOMEOWNER, RICHLAND HILLS',
-      text: 'After a pipe burst on the second floor, Dry State LLC was on-site in 40 minutes. Their equipment is top-notch and their project manager handled our insurance carrier directly. I didn\'t have to lift a finger.',
-      service: 'Water Damage Restoration',
-      verified: true,
-      rating: 5
-    },
-    {
-      name: 'Sarah Jenkins',
-      role: 'BUSINESS OWNER, ARLINGTON',
-      text: 'A kitchen fire at my restaurant was devastating, but the smoke removal team at Dry State worked through the night to get us back open by the weekend. Truly lifesavers.',
-      service: 'Fire & Smoke Damage',
-      verified: true,
-      rating: 5
-    }
-  ];
+  useEffect(() => {
+    // Inject the Featurable script so it scans for the widget div and renders.
+    // Re-added on mount so client-side navigation re-initializes the embed.
+    const script = document.createElement('script');
+    script.src = FEATURABLE_SRC;
+    script.async = true;
+    script.charset = 'UTF-8';
+    document.body.appendChild(script);
+
+    return () => {
+      try {
+        document.body.removeChild(script);
+      } catch (e) {
+        /* script already removed */
+      }
+    };
+  }, []);
 
   return (
     <section className="testimonials section" id="reviews">
@@ -28,47 +31,33 @@ const Testimonials = () => {
           <div className="testimonials-sidebar reveal">
             <span className="sub-title" style={{ color: '#b6171e', letterSpacing: '2px' }}>CLIENT VOICES</span>
             <h2 className="sidebar-title">Customers Love Us!</h2>
-            
+
             <div className="sidebar-rating">
               <div className="stars">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={20} fill="#fbbf24" color="#fbbf24" />
                 ))}
               </div>
-              <span className="rating-value">5.0 / 5.0 Rating</span>
+              <span className="rating-value">Rated by our Google customers</span>
             </div>
-            
+
             <p className="sidebar-description">
-              We take immense pride in our reputation for excellence. Read what our clients in Richland Hills have to say about our rapid response and quality.
+              We take immense pride in our reputation for excellence. Read what our clients across the Dallas–Fort Worth area have to say about our rapid response and quality.
             </p>
-            
-            <button className="btn btn-dark-blue">Read All Google Reviews</button>
+
+            <a
+              href="https://maps.app.goo.gl/RjjgLFHP9CA5GMGaA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-dark-blue"
+            >
+              Read All Google Reviews
+            </a>
           </div>
 
           <div className="testimonials-list">
-            {reviews.map((review, index) => (
-              <div key={index} className="testimonial-card-long reveal">
-                <div className="card-top-row">
-                  <div className="user-info">
-                    <div className="avatar-box"></div>
-                    <div className="user-text">
-                      <h4>{review.name}</h4>
-                      <span>{review.role}</span>
-                    </div>
-                  </div>
-                  {review.verified && (
-                    <span className="verified-tag">VERIFIED PROJECT</span>
-                  )}
-                </div>
-                
-                <p className="card-review-text">"{review.text}"</p>
-                
-                <div className="card-bottom-row">
-                  <CheckCircle2 size={18} className="service-icon-check" />
-                  <span className="service-label">Service: <strong>{review.service}</strong></span>
-                </div>
-              </div>
-            ))}
+            {/* Live Google Business Profile reviews via Featurable */}
+            <div id={`featurable-${FEATURABLE_WIDGET_ID}`} data-featurable-async></div>
           </div>
         </div>
       </div>

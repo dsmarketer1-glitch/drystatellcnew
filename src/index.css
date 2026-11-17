@@ -844,6 +844,25 @@ button {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  min-width: 0; /* allow the column to shrink so the reviews widget stays in bounds */
+  width: 100%;
+}
+
+/* Keep the Featurable reviews widget inside its column on all screens.
+   An explicit width (not just max-width) lets the widget's responsive
+   observer read the real container size and re-flow on mobile. */
+.testimonials-list > [id^="featurable-"] {
+  width: 100%;
+  max-width: 100%;
+}
+
+.testimonials-list > [id^="featurable-"] .shadow-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.testimonials-sidebar {
+  min-width: 0;
 }
 
 .testimonial-card-long {
@@ -1975,7 +1994,7 @@ button {
 
 /* Why Choose Us */
 .why-choose-us {
-  background: var(--primary);
+  background: linear-gradient(165deg, #c21f27 0%, #b6171e 48%, #9c141a 100%);
   color: white;
   position: relative;
   overflow: hidden;
@@ -1984,43 +2003,66 @@ button {
 
 .why-choose-content {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 80px;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 72px;
   align-items: center;
   position: relative;
   z-index: 2;
 }
 
 .why-choose-left h2 {
-  font-size: clamp(32px, 5vw, 64px);
-  line-height: 1;
+  font-size: clamp(32px, 4.5vw, 58px);
+  line-height: 1.03;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.why-choose-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 500;
+  opacity: 0.85;
+  max-width: 380px;
 }
 
 .why-choose-right .features-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 60px 40px;
+  gap: 20px;
 }
-
-
 
 .feature-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 32px 24px;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-4px);
+}
+
+/* Lone 5th card spans the full width of the grid for balance */
+.why-choose-right .feature-item:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 .feature-icon {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: white;
 }
 
@@ -2041,34 +2083,19 @@ button {
   line-height: 1.6;
   opacity: 0.85;
   font-weight: 500;
-}
-
-.watermark-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  opacity: 0.08;
-  z-index: 1;
-  pointer-events: none;
-  filter: brightness(0) invert(1);
-}
-
-.watermark-logo img {
-  width: 100%;
-  height: auto;
+  max-width: 420px;
 }
 
 @media (max-width: 1024px) {
   .why-choose-content {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 48px;
     text-align: center;
   }
-  
-  .why-choose-right .features-list {
-    gap: 40px 20px;
+
+  .why-choose-left p {
+    max-width: 520px;
+    margin: 0 auto;
   }
 }
 
@@ -2076,11 +2103,7 @@ button {
   .why-choose-right .features-list {
     grid-template-columns: 1fr;
   }
-  
-  .why-choose-right .feature-item:first-child {
-    grid-column: span 1;
-  }
-  
+
   .why-choose-us {
     padding: 80px 0;
   }

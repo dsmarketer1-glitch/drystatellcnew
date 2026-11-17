@@ -44,7 +44,7 @@ function BaseServicePage({ content }) {
               <div className="flex flex-wrap gap-4">
                 <a href="tel:2147851130" className="bg-secondary hover:bg-secondary/90 text-white font-cta text-cta px-8 py-4 flex items-center gap-2 border-none transition-transform active:scale-95 no-underline">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>emergency</span>
-                  Emergency Help
+                  Call 214-785-1130
                 </a>
                 <Link to="/contact" className="border-2 border-white hover:bg-white hover:text-primary text-white font-cta text-cta px-8 py-4 transition-all bg-transparent no-underline flex items-center justify-center">
                   Get Free Estimate

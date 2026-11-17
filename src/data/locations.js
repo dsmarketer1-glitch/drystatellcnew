@@ -68,7 +68,7 @@ export const locations = [
     county: 'Dallas County',
     tier: 'primary',
     blurb:
-      'Garland’s mix of established mid-century neighborhoods and growing suburbs sees its share of burst pipes, roof leaks, and North Texas storm damage. Dry State keeps rapid-response crews ready across the city, day or night.',
+      'Garland’s mix of established mid-century neighborhoods and growing suburbs sees its share of burst pipes, roof leaks, and North Texas storm damage. DryState keeps rapid-response crews ready across the city, day or night.',
     communities: [
       {
         slug: 'downtown-garland',
@@ -114,7 +114,7 @@ export const locations = [
     county: 'Dallas County',
     tier: 'primary',
     blurb:
-      'Irving spans historic older neighborhoods and booming Las Colinas development, each with distinct restoration needs. From aging pipes to sudden storm damage, Dry State delivers fast, certified response across the city.',
+      'Irving spans historic older neighborhoods and booming Las Colinas development, each with distinct restoration needs. From aging pipes to sudden storm damage, DryState delivers fast, certified response across the city.',
     communities: [
       {
         slug: 'south-irving',
@@ -164,7 +164,7 @@ export const locations = [
     county: 'Dallas County',
     tier: 'primary',
     blurb:
-      'Mesquite’s expanding suburbs and older core alike face burst pipes, appliance leaks, and severe North Texas storms. Dry State delivers rapid, certified restoration across the city.',
+      'Mesquite’s expanding suburbs and older core alike face burst pipes, appliance leaks, and severe North Texas storms. DryState delivers rapid, certified restoration across the city.',
   },
   {
     slug: 'plano',
@@ -204,7 +204,7 @@ export const locations = [
     county: 'Dallas & Collin Counties',
     tier: 'primary',
     blurb:
-      'Sachse’s newer neighborhoods still face plumbing failures, appliance leaks, and severe storms. Dry State keeps certified crews ready to respond across the community.',
+      'Sachse’s newer neighborhoods still face plumbing failures, appliance leaks, and severe storms. DryState keeps certified crews ready to respond across the community.',
   },
   {
     slug: 'wylie',
@@ -236,7 +236,7 @@ export const locations = [
     county: 'Dallas County',
     tier: 'primary',
     blurb:
-      'Balch Springs’ established homes often run on aging plumbing prone to leaks and bursts. Dry State provides fast mitigation and full restoration, day or night.',
+      'Balch Springs’ established homes often run on aging plumbing prone to leaks and bursts. DryState provides fast mitigation and full restoration, day or night.',
   },
   {
     slug: 'rockwall',
@@ -276,7 +276,7 @@ export const locations = [
     county: 'Dallas County',
     tier: 'primary',
     blurb:
-      'Duncanville’s established homes are more susceptible to aging pipes, roof leaks, and hidden moisture. Dry State restores these properties quickly and completely.',
+      'Duncanville’s established homes are more susceptible to aging pipes, roof leaks, and hidden moisture. DryState restores these properties quickly and completely.',
   },
   {
     slug: 'desoto',
@@ -292,7 +292,7 @@ export const locations = [
     county: 'Tarrant County',
     tier: 'primary',
     blurb:
-      "Home to Dry State's headquarters, Richland Hills is where our fleet is based, giving these mid-century homes the fastest possible response. Aging plumbing and North Texas humidity make quick mitigation essential to prevent mold.",
+      "Home to DryState's headquarters, Richland Hills is where our fleet is based, giving these mid-century homes the fastest possible response. Aging plumbing and North Texas humidity make quick mitigation essential to prevent mold.",
   },
   {
     slug: 'north-richland-hills',
@@ -308,7 +308,7 @@ export const locations = [
     county: 'Tarrant County',
     tier: 'primary',
     blurb:
-      'Bedford’s mature Mid-Cities homes often hide dated plumbing and water heaters that fail without warning. Dry State mitigates quickly to prevent secondary mold and structural damage.',
+      'Bedford’s mature Mid-Cities homes often hide dated plumbing and water heaters that fail without warning. DryState mitigates quickly to prevent secondary mold and structural damage.',
   },
   {
     slug: 'euless',
@@ -332,7 +332,7 @@ export const locations = [
     county: 'Tarrant County',
     tier: 'primary',
     blurb:
-      'Haltom City’s older housing stock carries aging galvanized plumbing that’s vulnerable to leaks and bursts. Dry State restores these homes quickly and thoroughly.',
+      'Haltom City’s older housing stock carries aging galvanized plumbing that’s vulnerable to leaks and bursts. DryState restores these homes quickly and thoroughly.',
   },
   {
     slug: 'fort-worth',

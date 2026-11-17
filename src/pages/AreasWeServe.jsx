@@ -64,11 +64,11 @@ const AreasWeServe = () => {
           <div className="max-w-3xl text-left">
             <span className="inline-block py-1 px-3 bg-[#b6171e] text-white font-bold text-[10px] md:text-[12px] uppercase tracking-[0.1em] mb-6">NOW SERVING ALL OF DFW</span>
             <h1 className="text-[32px] md:text-[56px] font-['Work_Sans'] font-bold text-white mb-6 leading-[1.1] tracking-[-0.02em]">Trusted Restoration Across the DFW Metroplex</h1>
-            <p className="text-[16px] md:text-[18px] text-white/90 mb-10 max-w-xl leading-[1.6]">When disaster strikes, every minute counts. Dry State LLC provides rapid-response water, fire, and mold restoration across North Texas with professional precision.</p>
+            <p className="text-[16px] md:text-[18px] text-white/90 mb-10 max-w-xl leading-[1.6]">When disaster strikes, every minute counts. DryState LLC provides rapid-response water, fire, and mold restoration across North Texas with professional precision.</p>
             <div className="flex flex-row flex-wrap gap-4 justify-start">
               <a href="tel:2147851130" className="bg-[#b6171e] text-white font-['Work_Sans'] font-bold text-[14px] md:text-[16px] px-6 md:px-8 py-4 flex items-center justify-center gap-2 hover:bg-[#9a141a] transition-all no-underline rounded-[4px]">
-                <span className="material-symbols-outlined text-white text-[20px]">emergency</span>
-                24/7 EMERGENCY RESPONSE
+                <span className="material-symbols-outlined text-white text-[20px]">call</span>
+                CALL 214-785-1130
               </a>
               <button className="border-2 border-white text-white font-['Work_Sans'] font-bold text-[14px] md:text-[16px] px-6 md:px-8 py-4 hover:bg-white/10 transition-all rounded-[4px]">
                 VIEW SERVICE AREAS
@@ -106,7 +106,7 @@ const AreasWeServe = () => {
           <div className="text-center md:text-left">
             <span className="text-[#b6171e] text-[11px] md:text-[12px] font-bold tracking-[0.2em] uppercase mb-4 block">STRATEGIC LOCATION</span>
             <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-6 leading-[1.2] tracking-[-0.01em]">Richland Hills: The Heart of Our DFW Operations</h2>
-            <p className="text-[16px] md:text-[18px] text-[#44464f] mb-10 leading-[1.7]">Headquartered in Richland Hills, Dry State LLC is strategically positioned to reach any corner of the DFW Metroplex within an hour. Our central location allows our fleet to deploy instantly to Fort Worth, Dallas, and everywhere in between.</p>
+            <p className="text-[16px] md:text-[18px] text-[#44464f] mb-10 leading-[1.7]">Headquartered in Richland Hills, DryState LLC is strategically positioned to reach any corner of the DFW Metroplex within an hour. Our central location allows our fleet to deploy instantly to Fort Worth, Dallas, and everywhere in between.</p>
             <div className="space-y-4 text-left inline-block md:block">
               <div className="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-white border border-[#f1f5f9] rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 md:w-14 md:h-14 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -260,9 +260,10 @@ const AreasWeServe = () => {
                   <div className="font-bold text-[10px] md:text-[12px] text-[#00123d] uppercase tracking-[0.1em]">AVAILABILITY</div>
                 </div>
               </div>
-              <button className="bg-[#00123d] text-white font-['Work_Sans'] font-bold py-4 md:py-5 w-full hover:bg-[#000e2e] transition-colors uppercase tracking-[0.15em] text-[14px] md:text-[15px] rounded-xl shadow-lg">
-                CALL FOR IMMEDIATE ASSISTANCE
-              </button>
+              <a href="tel:2147851130" className="bg-[#00123d] text-white font-['Work_Sans'] font-bold py-4 md:py-5 w-full hover:bg-[#000e2e] transition-colors uppercase tracking-[0.15em] text-[14px] md:text-[15px] rounded-xl shadow-lg no-underline flex items-center justify-center gap-2">
+                <span className="material-symbols-outlined">call</span>
+                CALL 214-785-1130
+              </a>
             </div>
             <div className="md:w-1/2 relative h-[300px] md:h-auto">
               <img 
@@ -285,7 +286,7 @@ const AreasWeServe = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Sarah J.", role: "Richland Hills Resident", text: "Our burst pipe in Richland Hills happened at 2 AM. Dry State was there before 3 AM and saved our hardwood floors. Professional and efficient." },
+              { name: "Sarah J.", role: "Richland Hills Resident", text: "Our burst pipe in Richland Hills happened at 2 AM. DryState was there before 3 AM and saved our hardwood floors. Professional and efficient." },
               { name: "Marcus R.", role: "Fort Worth Business Owner", text: "The smoke damage in our Fort Worth office was extensive. They handled the entire insurance claim and the cleaning was flawless." },
               { name: "Elena W.", role: "Dallas Homeowner", text: "Used them for property restoration in Dallas after the spring storms. Knowledgeable crew and they explained everything clearly." }
             ].map((review, idx) => (
@@ -345,11 +346,11 @@ const AreasWeServe = () => {
             </div>
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-[32px] md:text-[42px] font-['Work_Sans'] font-bold mb-6 leading-[1.1] tracking-[-0.02em]">Ready to Help Your Community</h2>
-              <p className="text-[17px] md:text-[20px] text-white/70 mb-10 md:mb-12 leading-[1.6]">Don't wait for damage to worsen. Contact Dry State LLC now for a professional assessment and immediate restoration action anywhere in North Texas.</p>
+              <p className="text-[17px] md:text-[20px] text-white/70 mb-10 md:mb-12 leading-[1.6]">Don't wait for damage to worsen. Contact DryState LLC now for a professional assessment and immediate restoration action anywhere in North Texas.</p>
               <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-6">
                 <a className="bg-[#b6171e] text-white font-['Work_Sans'] font-bold px-8 py-4 md:px-12 md:py-5 flex items-center justify-center gap-3 rounded-xl shadow-lg hover:bg-[#9a141a] hover:scale-105 transition-all text-[16px] md:text-[18px]" href="tel:2147851130">
                   <span className="material-symbols-outlined">call</span>
-                  CALL FOR 24/7 HELP
+                  CALL 214-785-1130
                 </a>
                 <a className="bg-white/10 backdrop-blur-md border border-white/20 text-white font-['Work_Sans'] font-bold px-8 py-4 md:px-12 md:py-5 flex items-center justify-center gap-3 rounded-xl hover:bg-white/20 transition-all text-[16px] md:text-[18px]" href="#">
                   <span className="material-symbols-outlined">assignment</span>

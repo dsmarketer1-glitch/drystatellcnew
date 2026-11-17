@@ -12,7 +12,7 @@ function FinancingWarranty() {
         </div>
         <div className="bg-primary text-white p-10 rounded-xl">
           <span className="material-symbols-outlined text-tertiary-fixed-dim text-5xl mb-4" style={{ fontVariationSettings: "'FILL' 1" }}>verified_user</span>
-          <h3 className="font-h3 text-h3 mb-4">The Dry State Guarantee</h3>
+          <h3 className="font-h3 text-h3 mb-4">The DryState Guarantee</h3>
           <p className="opacity-90 mb-6">We stand by our work with a 100% satisfaction guarantee and a 5-year workmanship warranty. If moisture returns due to our oversight, we fix it at zero cost to you.</p>
           <div className="flex items-center gap-4 opacity-70 border-t border-white/20 pt-6">
             <img 

@@ -40,7 +40,7 @@ const content = {
     { title: "Appliance Malfunctions", desc: "Washing machine hoses and refrigerator supply lines can fail suddenly, releasing hundreds of gallons of water." }
   ],
   insuranceTitle: "Hassle-Free Insurance Claims",
-  insuranceDesc: "We understand how stressful dealing with insurance can be during a disaster. Dry State LLC works directly with all major insurance carriers to streamline your claim process.",
+  insuranceDesc: "We understand how stressful dealing with insurance can be during a disaster. DryState LLC works directly with all major insurance carriers to streamline your claim process.",
   insuranceBenefits: [
     "We handle all the paperwork for you",
     "Direct coordination with adjusters",

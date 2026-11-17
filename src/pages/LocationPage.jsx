@@ -148,7 +148,7 @@ const LocationPage = () => {
               Trusted Restoration for {fullName}
             </h2>
             <p className="text-[16px] md:text-[18px] text-[#44464f] mb-8 leading-[1.7]">
-              When disaster strikes in {name}, every minute counts. Dry State LLC deploys IICRC-certified crews and
+              When disaster strikes in {name}, every minute counts. DryState LLC deploys IICRC-certified crews and
               truck-mounted equipment fast, stopping damage before it spreads and restoring your property to pre-loss
               condition.
             </p>
@@ -345,7 +345,7 @@ const LocationPage = () => {
                 24/7 Emergency Restoration in {name}
               </h2>
               <p className="text-[17px] md:text-[20px] text-white/70 mb-10 md:mb-12 leading-[1.6]">
-                Don't wait for damage to worsen. Call Dry State LLC now for immediate response anywhere in {fullName}.
+                Don't wait for damage to worsen. Call DryState LLC now for immediate response anywhere in {fullName}.
               </p>
               <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-6">
                 <a
