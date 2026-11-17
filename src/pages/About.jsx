@@ -244,7 +244,7 @@ const About = () => {
           </div>
           <div className="order-1 md:order-2 text-center md:text-left">
             <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-8 leading-[1.2]">Our Community Commitment</h2>
-            <p className="text-[16px] md:text-[18px] text-[#44464f] mb-10 leading-relaxed">As a family-owned business rooted in Richland Hills and Arlington, we believe our responsibility extends beyond the job site. We are proud supporters of DFW first responders and local neighborhood initiatives.</p>
+            <p className="text-[16px] md:text-[18px] text-[#44464f] mb-10 leading-relaxed">As a family-owned business rooted in the Dallas–Fort Worth metroplex, we believe our responsibility extends beyond the job site. We are proud supporters of DFW first responders and local neighborhood initiatives.</p>
             <ul className="space-y-4 md:space-y-6 text-left">
               <li className="flex items-start gap-4 md:gap-5 p-4 md:p-6 bg-white rounded-xl shadow-sm border border-slate-100">
                 <span className="material-symbols-outlined text-[#b6171e] text-[24px] md:text-[28px] mt-1">check_circle</span>
