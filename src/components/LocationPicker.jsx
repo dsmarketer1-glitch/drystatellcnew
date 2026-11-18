@@ -76,8 +76,7 @@ export default function LocationPicker({ onChange }) {
     };
   }, []);
 
-  const handleSearch = async (e) => {
-    e.preventDefault();
+  const handleSearch = async () => {
     const hit = await nominatimSearch(search);
     if (hit && mapRef.current && markerRef.current) {
       mapRef.current.setView([hit.lat, hit.lng], 15);
@@ -89,20 +88,27 @@ export default function LocationPicker({ onChange }) {
 
   return (
     <div>
-      <form onSubmit={handleSearch} className="flex gap-2 mb-2">
+      <div className="flex gap-2 mb-2">
         <input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              handleSearch();
+            }
+          }}
           placeholder="Search an address or place…"
           className="flex-1 border border-slate-300 rounded-lg p-3 text-[15px] outline-none focus:ring-2 focus:ring-[#00123d]"
         />
         <button
-          type="submit"
+          type="button"
+          onClick={handleSearch}
           className="bg-[#00123d] text-white font-bold px-5 rounded-lg hover:bg-[#0f265c] transition-colors"
         >
           Find
         </button>
-      </form>
+      </div>
       <div id="pin-map" className="h-72 rounded-lg overflow-hidden border border-slate-200" />
       {address && <p className="text-[13px] text-[#44464f] mt-2">{address}</p>}
       <p className="text-[12px] text-[#757681] mt-1">
