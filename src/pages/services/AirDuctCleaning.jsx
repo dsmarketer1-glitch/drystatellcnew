@@ -2,6 +2,7 @@ import React from 'react';
 import BaseServicePage from '../BaseServicePage';
 
 const content = {
+  eyebrow: "PROFESSIONAL CLEANING SERVICES",
   title: "Air Duct & HVAC Cleaning",
   heroDesc: "Improve your indoor air quality and HVAC efficiency. We provide professional deep cleaning for residential and commercial duct systems.",
   heroChecklist: [

@@ -2,6 +2,7 @@ import React from 'react';
 import BaseServicePage from '../BaseServicePage';
 
 const content = {
+  eyebrow: "PROFESSIONAL CLEANING SERVICES",
   title: "Professional Content Cleaning",
   heroDesc: "Restoring your most valued possessions after a disaster. We provide expert cleaning and deodorization for furniture, electronics, and sentimental items.",
   heroChecklist: [

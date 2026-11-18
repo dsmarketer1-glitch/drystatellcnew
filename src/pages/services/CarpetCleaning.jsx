@@ -2,6 +2,7 @@ import React from 'react';
 import BaseServicePage from '../BaseServicePage';
 
 const content = {
+  eyebrow: "PROFESSIONAL CLEANING SERVICES",
   title: "Professional Carpet Cleaning",
   heroDesc: "Deep cleaning for your home's most important surfaces. We use truck-mounted steam extraction to remove stains, allergens, and deep-seated dirt.",
   heroChecklist: [

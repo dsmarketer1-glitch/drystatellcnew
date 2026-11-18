@@ -2,6 +2,7 @@ import React from 'react';
 import BaseServicePage from '../BaseServicePage';
 
 const content = {
+  eyebrow: "PROFESSIONAL CLEANING SERVICES",
   title: "Tile & Grout Cleaning",
   heroDesc: "Professional restoration for your hard surfaces. We use high-pressure steam and specialized cleaning agents to remove years of buildup and stains.",
   heroChecklist: [

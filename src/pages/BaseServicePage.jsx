@@ -38,7 +38,7 @@ function BaseServicePage({ content }) {
         >
           <div className="max-w-[1280px] mx-auto px-6 w-full text-white">
             <div className="max-w-2xl">
-              <span className="bg-secondary text-white px-4 py-1 text-label-caps inline-block mb-4">24/7 EMERGENCY RESPONSE</span>
+              <span className="bg-secondary text-white px-4 py-1 text-label-caps inline-block mb-4">{content.eyebrow || "24/7 EMERGENCY RESPONSE"}</span>
               <h1 className="font-h1 text-h1 mb-6">Expert {content.title} in Richland Hills</h1>
               <p className="font-body-lg text-body-lg mb-8 opacity-90">{content.heroDesc}</p>
               <div className="flex flex-wrap gap-4">
