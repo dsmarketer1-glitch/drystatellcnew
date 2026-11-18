@@ -126,11 +126,24 @@ const Contact = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] md:text-[11px] font-black text-[#00123d] tracking-widest uppercase">SERVICE TYPE</label>
-                  <select name="service_type" className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none cursor-pointer">
-                    <option>Water Damage Restoration</option>
-                    <option>Fire & Smoke Damage</option>
-                    <option>Mold Remediation</option>
-                    <option>Storm Damage Repair</option>
+                  <select name="service_type" required defaultValue="" className="w-full border-slate-200 rounded-lg p-4 bg-[#f8f9fa] focus:bg-white focus:ring-2 focus:ring-[#00123d] transition-all outline-none cursor-pointer">
+                    <option value="" disabled>Select a service...</option>
+                    <optgroup label="Restoration Services">
+                      <option>Water Damage Restoration</option>
+                      <option>Fire &amp; Smoke Damage</option>
+                      <option>Flood Damage</option>
+                      <option>Storm Damage</option>
+                      <option>Sewage Cleanup</option>
+                      <option>Water Removal</option>
+                      <option>Reconstruction</option>
+                    </optgroup>
+                    <optgroup label="Cleaning Services">
+                      <option>Content Cleaning</option>
+                      <option>Air Duct Cleaning</option>
+                      <option>Carpet Cleaning</option>
+                      <option>Tile &amp; Grout Cleaning</option>
+                    </optgroup>
+                    <option>Other / Not Sure</option>
                   </select>
                 </div>
                 <div className="space-y-2">

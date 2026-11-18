@@ -240,8 +240,8 @@ function BaseServicePage({ content }) {
           </div>
         </section>
 
-        <SecondaryCTA />
-        <ServicePageCTA />
+        <SecondaryCTA content={content} />
+        <ServicePageCTA content={content} />
         <Footer />
       </main>
     </div>

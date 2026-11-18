@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="footer-brand">
             <Link to="/" className="footer-logo-link">
-              <img src="/assets/drystate-logo.png" alt="DryState LLC" className="footer-logo" />
+              <img src="/assets/drystate-logo-primary.png" alt="DryState LLC" className="footer-logo" />
             </Link>
             <div className="brand-content">
               <h3 className="brand-tagline">Trusted Restoration Services Across DFW</h3>
@@ -28,7 +28,6 @@ const Footer = () => {
               <li><Link to="/services/fire-damage">Fire &amp; Smoke Damage</Link></li>
               <li><Link to="/services/storm-damage">Storm Damage Cleanup</Link></li>
               <li><Link to="/services/sewage-cleanup">Sewage Cleanup</Link></li>
-              <li><Link to="/services/water-damage">Mold Remediation</Link></li>
               <li><Link to="/services/reconstruction">Reconstruction</Link></li>
               <li><Link to="/services/air-duct-cleaning">Air Duct Cleaning</Link></li>
               <li><Link to="/services/content-cleaning">Content Cleaning</Link></li>
