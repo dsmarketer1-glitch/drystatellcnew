@@ -106,6 +106,9 @@ function Navbar() {
             <Link className="text-[14px] xl:text-[15px] font-black text-[#0F265C] hover:text-[#D32F2F] transition-all py-2" to="/areas-we-serve">
               Service Area
             </Link>
+            <Link className="text-[14px] xl:text-[15px] font-black text-[#0F265C] hover:text-[#D32F2F] transition-all py-2" to="/projects">
+              Projects
+            </Link>
             <Link className="text-[14px] xl:text-[15px] font-black text-[#0F265C] hover:text-[#D32F2F] transition-all py-2" to="/about">
               About Us
             </Link>
@@ -162,6 +165,7 @@ function Navbar() {
           </div>
 
           <Link className="text-[24px] font-black text-[#0F265C]" to="/areas-we-serve">Service Area</Link>
+          <Link className="text-[24px] font-black text-[#0F265C]" to="/projects">Projects</Link>
           <Link className="text-[24px] font-black text-[#0F265C]" to="/about">About Us</Link>
           <Link className="text-[24px] font-black text-[#0F265C]" to="/contact">Contact</Link>
           
