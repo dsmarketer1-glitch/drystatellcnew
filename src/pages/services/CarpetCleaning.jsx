@@ -49,6 +49,8 @@ const content = {
   ],
   offerTitle: "Carpet Care Offer",
   offerDesc: "Free Deodorizer Treatment with any carpet cleaning service. Get that 'new home' smell back today.",
+  processTitle: "Your Carpet Cleaning Appointment",
+  processDesc: "Here's exactly what our certified technicians do from the moment they arrive to deep-clean and refresh your carpets.",
   process: [
     { num: "01", title: "Pre-Inspection", desc: "Identifying fiber types and specific stain challenges." },
     { num: "02", title: "Pre-Treatment", desc: "Applying eco-friendly agents to break down heavy soils." },

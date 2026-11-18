@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -19,7 +19,12 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import LocationPage from './pages/LocationPage';
 import Privacy from './pages/Privacy';
+import Projects from './pages/Projects';
 import ScrollToTop from './components/ScrollToTop';
+
+// Lazy-loaded: the team tool pulls in the Firebase SDK, which we keep out of
+// the main bundle so public pages stay lean.
+const TeamPin = lazy(() => import('./pages/TeamPin'));
 import './index.css';
 
 function App() {
@@ -34,6 +39,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/pins" element={<Projects />} />
+          <Route path="/team/pin" element={<Suspense fallback={null}><TeamPin /></Suspense>} />
           <Route path="/services" element={<WaterDamage />} />
           <Route path="/services/water-damage" element={<WaterDamage />} />
           <Route path="/services/fire-damage" element={<FireDamage />} />

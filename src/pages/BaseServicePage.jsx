@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import TrustBar from '../components/TrustBar';
 import ServingAreas from '../components/ServingAreas';
 import SecondaryCTA from '../components/SecondaryCTA';
 import ServicePageCTA from '../components/ServicePageCTA';
+import PinsSection from '../components/PinsSection';
 import Footer from '../components/Footer';
 
 function BaseServicePage({ content }) {
+  const location = useLocation();
+  // The last path segment matches the service slug (e.g. /services/water-damage).
+  const serviceSlug = content.slug || location.pathname.split('/').filter(Boolean).pop();
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -193,8 +197,8 @@ function BaseServicePage({ content }) {
         <section className="py-section-gap bg-surface-container-low">
           <div className="max-w-[1280px] mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="font-h2 text-h2 text-primary mb-4">Our Proven Restoration Process</h2>
-              <p className="text-on-surface-variant max-w-2xl mx-auto">We follow a rigorous IICRC-certified workflow to ensure your property is restored to pre-loss condition.</p>
+              <h2 className="font-h2 text-h2 text-primary mb-4">{content.processTitle || "Our Proven Restoration Process"}</h2>
+              <p className="text-on-surface-variant max-w-2xl mx-auto">{content.processDesc || "We follow a rigorous IICRC-certified workflow to ensure your property is restored to pre-loss condition."}</p>
             </div>
             <div className="grid md:grid-cols-5 gap-4">
               {content.process && content.process.map((step, i) => (
@@ -217,12 +221,19 @@ function BaseServicePage({ content }) {
 
         <ServingAreas />
 
+        {/* Live proof-of-work gallery for this service (hidden until jobs exist) */}
+        <PinsSection
+          service={serviceSlug}
+          heading={`Recent ${content.title || 'Restoration'} Jobs`}
+          subheading="Real work completed by our crews across the Dallas–Fort Worth metroplex."
+        />
+
         {/* FAQ Section */}
         <section className="py-section-gap bg-surface-container">
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="font-h2 text-h2 text-primary mb-4">Frequently Asked Questions</h2>
-              <p className="text-on-surface-variant">Everything you need to know about the restoration process.</p>
+              <p className="text-on-surface-variant">{content.faqDesc || "Everything you need to know about our services."}</p>
             </div>
             <div className="space-y-4">
               {content.faqs && content.faqs.map((faq, i) => (

@@ -49,6 +49,8 @@ const content = {
   ],
   offerTitle: "Tile Care Offer",
   offerDesc: "Free Grout Sealing with any full tile cleaning service. Protect your restored grout from future stains.",
+  processTitle: "Your Tile & Grout Cleaning Appointment",
+  processDesc: "Here's exactly what our technicians do to deep-clean, restore, and seal your tile and grout.",
   process: [
     { num: "01", title: "Pre-Treatment", desc: "Applying a specialized cleaning solution to emulsify dirt and oils." },
     { num: "02", title: "Manual Agitation", desc: "Hand-scrubbing grout lines to ensure the cleaning agent reaches deep into the pores." },

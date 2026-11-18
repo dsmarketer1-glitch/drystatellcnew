@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
+import PinsSection from '../components/PinsSection';
 import { getCity, getCommunity, PHONE, PHONE_HREF } from '../data/locations';
 
 const SERVICES = [
@@ -335,6 +336,13 @@ const LocationPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Live proof-of-work gallery for this city (hidden until jobs exist) */}
+      <PinsSection
+        city={city.slug}
+        heading={`Recent Jobs in ${city.name}`}
+        subheading={`Real restoration and cleaning work completed by our crews in and around ${city.name}.`}
+      />
 
       {/* Final CTA */}
       <section className="py-16 md:py-20 bg-white reveal">

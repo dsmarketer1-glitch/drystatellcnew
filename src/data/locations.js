@@ -419,3 +419,11 @@ export function citySlug(name) {
 export function getCityByName(name) {
   return getCity(citySlug(name));
 }
+
+// Flat list of selectable cities for DataPins (top-level cities only),
+// used by the capture form dropdown and the API's slug validation.
+export const cities = locations.map((c) => ({ slug: c.slug, name: c.name }));
+
+export function isValidCitySlug(slug) {
+  return cities.some((c) => c.slug === slug);
+}

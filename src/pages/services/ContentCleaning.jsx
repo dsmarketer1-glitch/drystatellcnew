@@ -49,6 +49,8 @@ const content = {
   ],
   offerTitle: "Content Care Offer",
   offerDesc: "Free 30-Day Storage with any full pack-out and content cleaning project. Keep your items safe while your home is being rebuilt.",
+  processTitle: "Our Content Cleaning Process",
+  processDesc: "From careful inventory to pack-back, here's how we clean, restore, and return your belongings.",
   process: [
     { num: "01", title: "Inventory", desc: "Carefully documenting every item and its condition before it leaves your home." },
     { num: "02", title: "Secure Pack-Out", desc: "Professional packing and transport to our climate-controlled restoration facility." },

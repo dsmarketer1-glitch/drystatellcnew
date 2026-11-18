@@ -49,6 +49,8 @@ const content = {
   ],
   offerTitle: "Air Quality Offer",
   offerDesc: "Free Video Duct Inspection with any air duct cleaning service. See the difference our deep cleaning makes.",
+  processTitle: "Your Air Duct Cleaning Appointment",
+  processDesc: "Here's exactly what happens when our technicians clean and sanitize your duct system for cleaner, healthier air.",
   process: [
     { num: "01", title: "Inspection", desc: "Video assessment of the entire duct system and HVAC unit." },
     { num: "02", title: "Agitation", desc: "Using power brushes to loosen dust and debris from duct walls." },
