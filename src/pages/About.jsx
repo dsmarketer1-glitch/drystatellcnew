@@ -86,7 +86,7 @@ const About = () => {
       <section className="bg-[#00123d] py-16 md:py-24 text-white reveal">
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-['Work_Sans'] font-bold mb-4">The Pillars of DryState</h2>
+            <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-['Work_Sans'] font-bold mb-4">The Pillars of DryState Restoration</h2>
             <p className="text-white/70 max-w-xl mx-auto text-sm md:text-base">Our culture is built on four non-negotiable principles that guide every technician on every job site.</p>
           </div>
           <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap gap-8">
@@ -136,10 +136,10 @@ const About = () => {
         </div>
       </section>
 
-      {/* 7. The DryState Difference */}
+      {/* 7. The DryState Restoration Difference */}
       <section className="bg-[#f8f9fa] py-24 reveal">
         <div className="max-w-[1280px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-black text-[#0F265C] mb-16 text-center">The DryState Difference</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0F265C] mb-16 text-center">The DryState Restoration Difference</h2>
           
           <div className="space-y-8">
             {/* Row 1: 2 columns */}
@@ -183,7 +183,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="relative order-2 md:order-1">
             <img 
-              alt="DryState team at local community event" 
+              alt="DryState Restoration team at local community event" 
               className="rounded-2xl shadow-xl w-full h-[500px] object-cover" 
               src="/assets/community-commitment-feature.png" 
             />
