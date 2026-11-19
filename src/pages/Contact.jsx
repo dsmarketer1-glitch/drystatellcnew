@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Footer from '../components/Footer';
-import CityName from '../components/CityName';
+import ServiceAreaSection from '../components/ServiceAreaSection';
 
 // EmailJS credentials — replace these with your own from https://dashboard.emailjs.com
 const EMAILJS_SERVICE_ID = 'service_e1ugpf3';
@@ -85,10 +85,6 @@ const Contact = () => {
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-[#00123d] text-[24px] md:text-[28px]">verified_user</span>
             <span className="text-[10px] md:text-[12px] font-black tracking-widest text-[#00123d] uppercase">IICRC CERTIFIED FIRM</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#00123d] text-[24px] md:text-[28px]">workspace_premium</span>
-            <span className="text-[10px] md:text-[12px] font-black tracking-widest text-[#00123d] uppercase">BBB A+ ACCREDITED</span>
           </div>
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-[#00123d] text-[24px] md:text-[28px]">security</span>
@@ -260,48 +256,7 @@ const Contact = () => {
       </section>
 
       {/* 7. Service Areas */}
-      <section className="py-16 md:py-24 bg-[#f8f9fa] reveal">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
-            <div>
-              <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-6">Primary Service Areas – Older Homes & Established Communities</h2>
-              <p className="text-[16px] md:text-[18px] text-[#44464f] mb-8 leading-relaxed">
-                We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-                {[
-                  ["Irving", "Grand Prairie", "Carrollton", "Duncanville", "Richland Hills", "North Richland Hills", "Bedford"],
-                  ["Euless", "Hurst", "Haltom City", "Arlington", "Fort Worth", "Farmers Branch"]
-                ].map((col, idx) => (
-                  <ul key={idx} className="space-y-4">
-                    {col.map((city, cIdx) => (
-                      <li key={cIdx} className="flex items-center gap-3 text-[#44464f] text-[15px] font-bold">
-                        <span className="w-1.5 h-1.5 bg-[#b6171e] rounded-full shrink-0"></span>
-                        <CityName name={city} className="text-[#44464f] hover:text-[#b6171e] no-underline transition-colors" />
-                      </li>
-                    ))}
-                  </ul>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-[22px] md:text-[28px] font-['Work_Sans'] font-bold text-[#00123d] mb-6 mt-2">Additional DFW Metroplex Areas We Serve</h3>
-              <p className="text-[16px] md:text-[18px] text-[#44464f] mb-8 leading-relaxed">
-                We also provide high-precision restoration and cleanup services to these growing communities across North Texas:
-              </p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-                {["Coppell", "Grapevine", "Keller", "Southlake", "Colleyville", "Lewisville", "Dallas", "Surrounding DFW communities"].map((city, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-[#44464f] text-[15px] font-bold">
-                    <span className="w-1.5 h-1.5 bg-[#b6171e]/60 rounded-full shrink-0"></span>
-                    <CityName name={city} className="text-[#44464f] hover:text-[#b6171e] no-underline transition-colors" />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServiceAreaSection />
 
       <Footer />
     </main>

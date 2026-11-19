@@ -4,7 +4,6 @@ import { Star, Shield, Award } from 'lucide-react';
 const TrustBadges = () => {
   const badges = [
     { label1: 'IICRC', label2: 'CERTIFIED FIRM', type: 'text' },
-    { label1: 'BBB', label2: 'A+ ACCREDITED', type: 'text' },
     { label1: 'TOP RATED', label2: 'RESTORATION', type: 'icon', icon: <Star fill="#00123d" /> },
     { label1: 'EPA', label2: 'LEAD-SAFE CERTIFIED', type: 'text' },
   ];

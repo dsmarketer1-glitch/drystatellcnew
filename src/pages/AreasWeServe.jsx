@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { getCity, locations } from '../data/locations';
+import ServiceAreaSection from '../components/ServiceAreaSection';
 
 // Renders a city name as a link to its dedicated page when one exists,
 // otherwise as plain text.
@@ -138,44 +139,8 @@ const AreasWeServe = () => {
         </div>
       </section>
 
-      {/* Detailed City List */}
-      <section className="py-24 bg-white reveal">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
-            <div className="area-category">
-              <h2 className="text-3xl md:text-4xl font-black text-[#0F265C] mb-6">Primary Service Areas – Older Homes & Established Communities</h2>
-              <p className="text-gray-600 mb-8 leading-relaxed">
-                We frequently service older neighborhoods and established communities where aging properties are more susceptible to water damage, drainage issues, and hidden moisture problems, including:
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-                {[
-                  ["Irving", "Grand Prairie", "Carrollton", "Duncanville", "Richland Hills", "North Richland Hills", "Bedford"],
-                  ["Euless", "Hurst", "Haltom City", "Fort Worth", "Farmers Branch"]
-                ].map((col, idx) => (
-                  <ul key={idx} className="space-y-4">
-                    {col.map((city, cIdx) => (
-                      <CityItem key={cIdx} city={city} dotClass="bg-[#D32F2F]" />
-                    ))}
-                  </ul>
-                ))}
-              </div>
-            </div>
-
-            <div className="area-category">
-              <h3 className="text-xl md:text-2xl font-black text-[#0F265C] mb-6 mt-2">Additional DFW Metroplex Areas We Serve</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
-                We also provide high-precision restoration and cleanup services to these growing communities across North Texas:
-              </p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-                {["Coppell", "Grapevine", "Keller", "Southlake", "Colleyville", "Lewisville", "Dallas", "Surrounding DFW communities"].map((city, idx) => (
-                  <CityItem key={idx} city={city} dotClass="bg-[#D32F2F]/60" />
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Service Areas by Region */}
+      <ServiceAreaSection bg="bg-white" />
 
       {/* Location Pages Directory */}
       <section className="py-16 md:py-24 bg-[#f8f9fa] reveal border-t border-slate-200">

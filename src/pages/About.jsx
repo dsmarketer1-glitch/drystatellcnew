@@ -45,7 +45,6 @@ const About = () => {
       <div className="bg-white border-b border-slate-200 py-6 md:py-8 reveal">
         <div className="max-w-[1280px] mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6 md:gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
           <div className="flex items-center gap-2 text-[#00123d]"><span className="font-black text-lg md:text-xl">IICRC</span> <span className="font-medium text-sm md:text-base">Certified Firm</span></div>
-          <div className="flex items-center gap-2 text-[#00123d]"><span className="font-black text-lg md:text-xl">BBB</span> <span className="font-medium text-sm md:text-base">A+ Rated</span></div>
           <div className="flex items-center gap-2 text-[#00123d]"><span className="font-black text-lg md:text-xl">EPA</span> <span className="font-medium text-sm md:text-base">Lead-Safe Certified</span></div>
           <div className="flex items-center gap-3">
             <div className="flex text-yellow-500 text-lg md:text-xl">★★★★★</div>
@@ -121,7 +120,6 @@ const About = () => {
         <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap gap-6 md:gap-8">
           {[
             { icon: "badge", title: "IICRC Certified Firm", subtitle: "Global Standard" },
-            { icon: "award_star", title: "BBB A+ Accredited", subtitle: "Trust Rating" },
             { icon: "policy", title: "EPA Lead-Safe", subtitle: "Environmental Safety" },
             { icon: "shield", title: "Fully Insured", subtitle: "General Liability" }
           ].map((cred, idx) => (
