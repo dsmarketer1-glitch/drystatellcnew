@@ -1,6 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const serviceCategories = [
+  {
+    name: 'Water',
+    items: [
+      { label: 'Water Damage Restoration', to: '/services/water-damage' },
+      { label: 'Water Removal Services', to: '/services/water-removal' },
+      { label: 'Water Damage Repairs', to: '/services/water-damage' },
+      { label: 'Flood Damage Cleanup', to: '/services/flood-damage' },
+      { label: 'Storm Damage Restoration', to: '/services/storm-damage' },
+      { label: 'Sewage Damage Cleanup', to: '/services/sewage-cleanup' },
+    ],
+  },
+  {
+    name: 'Fire',
+    items: [
+      { label: 'Fire Damage Restoration', to: '/services/fire-damage' },
+      { label: 'Fire Damage Repair', to: '/services/fire-damage' },
+      { label: 'Smoke Damage Cleaning', to: '/services/smoke-damage' },
+    ],
+  },
+  {
+    name: 'Construction',
+    items: [{ label: 'Reconstruction Service', to: '/services/reconstruction' }],
+  },
+  {
+    name: 'Mold',
+    items: [{ label: 'Mold Removal Services', to: '/services/mold-removal' }],
+  },
+  {
+    name: 'Content',
+    items: [{ label: 'Content Cleaning and Packing', to: '/services/content-cleaning' }],
+  },
+];
 
 const Footer = () => {
   return (
@@ -23,15 +56,21 @@ const Footer = () => {
           {/* Services Column */}
           <div className="footer-links">
             <h4>Our Services</h4>
-            <ul>
-              <li><Link to="/services/water-damage">Water Damage Restoration</Link></li>
-              <li><Link to="/services/fire-damage">Fire &amp; Smoke Damage</Link></li>
-              <li><Link to="/services/storm-damage">Storm Damage Cleanup</Link></li>
-              <li><Link to="/services/sewage-cleanup">Sewage Cleanup</Link></li>
-              <li><Link to="/services/reconstruction">Reconstruction</Link></li>
-              <li><Link to="/services/air-duct-cleaning">Air Duct Cleaning</Link></li>
-              <li><Link to="/services/content-cleaning">Content Cleaning</Link></li>
-            </ul>
+            <div className="footer-service-groups">
+              {serviceCategories.map((cat) => (
+                <details key={cat.name} className="footer-service-group">
+                  <summary>
+                    <span>{cat.name}</span>
+                    <span className="material-symbols-outlined footer-service-arrow">expand_more</span>
+                  </summary>
+                  <ul>
+                    {cat.items.map((item, i) => (
+                      <li key={i}><Link to={item.to}>{item.label}</Link></li>
+                    ))}
+                  </ul>
+                </details>
+              ))}
+            </div>
           </div>
 
           {/* Company Column */}

@@ -1553,6 +1553,57 @@ button {
   color: var(--primary);
 }
 
+/* Footer services — expandable category dropdowns */
+.footer-service-groups {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-service-group {
+  border-bottom: 1px solid #eef1f5;
+}
+
+.footer-service-group:first-child {
+  border-top: 1px solid #eef1f5;
+}
+
+.footer-service-group summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--secondary);
+  transition: color 0.2s ease;
+}
+
+.footer-service-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.footer-service-group summary:hover {
+  color: var(--primary);
+}
+
+.footer-service-arrow {
+  font-size: 20px;
+  transition: transform 0.25s ease;
+}
+
+.footer-service-group[open] .footer-service-arrow {
+  transform: rotate(180deg);
+}
+
+.footer-service-group ul {
+  padding: 0 0 14px 2px;
+  gap: 11px;
+}
+
 /* Contact column */
 .contact-info-list {
   display: flex;
