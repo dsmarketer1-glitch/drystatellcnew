@@ -20,6 +20,7 @@ import Contact from './pages/Contact';
 import LocationPage from './pages/LocationPage';
 import Privacy from './pages/Privacy';
 import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 import ScrollToTop from './components/ScrollToTop';
 
 // Lazy-loaded: the team tool pulls in the Firebase SDK, which we keep out of
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/pins" element={<Projects />} />
           <Route path="/team/pin" element={<Suspense fallback={null}><TeamPin /></Suspense>} />
           <Route path="/services" element={<WaterDamage />} />

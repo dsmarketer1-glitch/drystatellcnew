@@ -7,7 +7,6 @@ const serviceCategories = [
     items: [
       { label: 'Water Damage Restoration', to: '/services/water-damage' },
       { label: 'Water Removal Services', to: '/services/water-removal' },
-      { label: 'Water Damage Repairs', to: '/services/water-damage' },
       { label: 'Flood Damage Cleanup', to: '/services/flood-damage' },
       { label: 'Storm Damage Restoration', to: '/services/storm-damage' },
       { label: 'Sewage Damage Cleanup', to: '/services/sewage-cleanup' },
@@ -17,7 +16,6 @@ const serviceCategories = [
     name: 'Fire',
     items: [
       { label: 'Fire Damage Restoration', to: '/services/fire-damage' },
-      { label: 'Fire Damage Repair', to: '/services/fire-damage' },
       { label: 'Smoke Damage Cleaning', to: '/services/smoke-damage' },
     ],
   },

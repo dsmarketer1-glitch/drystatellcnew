@@ -47,10 +47,6 @@ function Navbar() {
           
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex gap-6 xl:gap-8 items-center h-full">
-            <Link className="text-[14px] xl:text-[15px] font-black text-[#0F265C] hover:text-[#D32F2F] transition-all py-2" to="/">
-              Home
-            </Link>
-            
             {/* Restoration Dropdown */}
             <div 
               className="relative h-full flex items-center group"
@@ -109,6 +105,9 @@ function Navbar() {
             <Link className="text-[14px] xl:text-[15px] font-black text-[#0F265C] hover:text-[#D32F2F] transition-all py-2" to="/projects">
               Projects
             </Link>
+            <Link className="text-[14px] xl:text-[15px] font-black text-[#0F265C] hover:text-[#D32F2F] transition-all py-2" to="/blog">
+              Blog
+            </Link>
             <Link className="text-[14px] xl:text-[15px] font-black text-[#0F265C] hover:text-[#D32F2F] transition-all py-2" to="/about">
               About Us
             </Link>
@@ -144,8 +143,6 @@ function Navbar() {
       {/* Mobile Navigation Overlay */}
       <div className={`fixed inset-0 bg-white z-[60] transition-all duration-300 lg:hidden overflow-y-auto ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
         <div className="flex flex-col items-center justify-start min-h-full gap-6 px-6 text-center pt-[100px] pb-20">
-          <Link className="text-[24px] font-black text-[#0F265C]" to="/">Home</Link>
-          
           <div className="w-full">
             <div className="text-[14px] font-black text-gray-400 uppercase tracking-widest mb-4">Restoration Services</div>
             <div className="grid grid-cols-1 gap-3">
@@ -166,6 +163,7 @@ function Navbar() {
 
           <Link className="text-[24px] font-black text-[#0F265C]" to="/areas-we-serve">Service Area</Link>
           <Link className="text-[24px] font-black text-[#0F265C]" to="/projects">Projects</Link>
+          <Link className="text-[24px] font-black text-[#0F265C]" to="/blog">Blog</Link>
           <Link className="text-[24px] font-black text-[#0F265C]" to="/about">About Us</Link>
           <Link className="text-[24px] font-black text-[#0F265C]" to="/contact">Contact</Link>
           
