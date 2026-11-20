@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import TrustBar from '../components/TrustBar';
 
 const Blog = () => {
   useEffect(() => {
@@ -34,6 +35,9 @@ const Blog = () => {
           </p>
         </div>
       </section>
+
+      {/* Trust Bar */}
+      <TrustBar />
 
       {/* Coming soon */}
       <section className="py-16 md:py-24">

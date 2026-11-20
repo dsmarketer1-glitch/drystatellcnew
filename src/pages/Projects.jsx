@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
+import TrustBar from '../components/TrustBar';
 import PinCard from '../components/PinCard';
 import { fetchPublicPins } from '../lib/pinsApi';
 
@@ -32,6 +33,9 @@ const Projects = () => {
           </p>
         </div>
       </section>
+
+      {/* Trust Bar */}
+      <TrustBar />
 
       {/* Gallery */}
       <section className="py-14 md:py-20">

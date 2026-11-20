@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Footer from '../components/Footer';
 import ServiceAreaSection from '../components/ServiceAreaSection';
+import TrustBar from '../components/TrustBar';
 
 // EmailJS credentials — replace these with your own from https://dashboard.emailjs.com
 const EMAILJS_SERVICE_ID = 'service_e1ugpf3';
@@ -89,22 +90,7 @@ const Contact = () => {
       </section>
 
       {/* 2. Trust Bar */}
-      <section className="bg-white border-b border-slate-200 py-6 md:py-8">
-        <div className="max-w-[1280px] mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6 md:gap-8 opacity-60 reveal">
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#00123d] text-[24px] md:text-[28px]">verified_user</span>
-            <span className="text-[10px] md:text-[12px] font-black tracking-widest text-[#00123d] uppercase">IICRC CERTIFIED FIRM</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#00123d] text-[24px] md:text-[28px]">security</span>
-            <span className="text-[10px] md:text-[12px] font-black tracking-widest text-[#00123d] uppercase">FULLY INSURED & BONDED</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#00123d] text-[24px] md:text-[28px]">stars</span>
-            <span className="text-[10px] md:text-[12px] font-black tracking-widest text-[#00123d] uppercase">5-STAR GOOGLE RATING</span>
-          </div>
-        </div>
-      </section>
+      <TrustBar />
 
       {/* 3. Main Interaction (Form & Sidebar Grid) */}
       <section className="py-16 md:py-24">

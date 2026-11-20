@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
 import PinsSection from '../components/PinsSection';
+import TrustBar from '../components/TrustBar';
 import { getCity, getCommunity, PHONE, PHONE_HREF } from '../data/locations';
 
 const SERVICES = [
@@ -120,23 +121,7 @@ const LocationPage = () => {
       </section>
 
       {/* Trust Bar */}
-      <div className="bg-white border-b border-slate-200 py-8 reveal">
-        <div className="max-w-[1280px] mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-8">
-          {[
-            { icon: 'verified', label: 'IICRC Certified Firm' },
-            { icon: 'star', label: '5-Star Average Rating' },
-            { icon: 'shield', label: 'Fully Insured & Bonded' },
-            { icon: 'timer', label: '60-Minute Arrival' },
-          ].map((item, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-[#b6171e] text-[28px]" style={{ fontVariationSettings: "'FILL' 0" }}>
-                {item.icon}
-              </span>
-              <span className="font-bold text-[#00123d] text-[13px] uppercase tracking-wider">{item.label}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+      <TrustBar />
 
       {/* Local Intro */}
       <section className="py-16 md:py-20 bg-white reveal">

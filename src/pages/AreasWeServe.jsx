@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import TrustBar from '../components/TrustBar';
 import { getCity, locations } from '../data/locations';
 
 // Renders a city name as a link to its dedicated page when one exists,
@@ -79,26 +80,7 @@ const AreasWeServe = () => {
       </section>
 
       {/* Trust Bar */}
-      <div className="bg-white border-b border-slate-200 py-8 reveal">
-        <div className="max-w-[1400px] mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-8">
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#b6171e] text-[28px]" style={{ fontVariationSettings: "'FILL' 0" }}>verified</span>
-            <span className="font-bold text-[#00123d] text-[13px] uppercase tracking-wider">IICRC Certified Firm</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#b6171e] text-[28px]" style={{ fontVariationSettings: "'FILL' 0" }}>star</span>
-            <span className="font-bold text-[#00123d] text-[13px] uppercase tracking-wider">5-Star Average Rating</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#b6171e] text-[28px]" style={{ fontVariationSettings: "'FILL' 0" }}>shield</span>
-            <span className="font-bold text-[#00123d] text-[13px] uppercase tracking-wider">Fully Insured & Bonded</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-[#b6171e] text-[28px]" style={{ fontVariationSettings: "'FILL' 0" }}>timer</span>
-            <span className="font-bold text-[#00123d] text-[13px] uppercase tracking-wider">60-Minute Arrival Guarantee</span>
-          </div>
-        </div>
-      </div>
+      <TrustBar />
 
       {/* Service Area Overview */}
       <section className="py-16 md:py-20 bg-white reveal">

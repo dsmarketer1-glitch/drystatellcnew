@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import TrustBar from '../components/TrustBar';
 
 const About = () => {
   useEffect(() => {
@@ -42,16 +43,7 @@ const About = () => {
       </section>
 
       {/* Trust Bar */}
-      <div className="bg-white border-b border-slate-200 py-6 md:py-8 reveal">
-        <div className="max-w-[1280px] mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6 md:gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-          <div className="flex items-center gap-2 text-[#00123d]"><span className="font-black text-lg md:text-xl">IICRC</span> <span className="font-medium text-sm md:text-base">Certified Firm</span></div>
-          <div className="flex items-center gap-2 text-[#00123d]"><span className="font-black text-lg md:text-xl">EPA</span> <span className="font-medium text-sm md:text-base">Lead-Safe Certified</span></div>
-          <div className="flex items-center gap-3">
-            <div className="flex text-yellow-500 text-lg md:text-xl">★★★★★</div>
-            <span className="font-bold text-[#00123d] text-sm md:text-base">5-Star Average</span>
-          </div>
-        </div>
-      </div>
+      <TrustBar />
 
       {/* 2. Mission & Vision */}
       <section className="py-16 md:py-24 px-6 max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center reveal">
