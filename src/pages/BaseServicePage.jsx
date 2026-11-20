@@ -155,7 +155,7 @@ function BaseServicePage({ content }) {
               <div className="order-2 md:order-1 reveal">
                 <div className="grid grid-cols-2 gap-4">
                   <img alt="Burst Pipe" className="w-full rounded aspect-square object-cover" src={content.sourceImage1 || "https://lh3.googleusercontent.com/aida-public/AB6AXuBOuA2x7WOZsxa1di3EAwPLm1kZIJ2YlFUfbgUzswHmj93JXx228X6DrgXZrdWmSEKnoeIqsQjilwWEVmYeq6Kp1Xh8rFxNBaZPOfV2VIYM0CtN91AuLMMu4s2zYt9cAd1X_D8VKDtrYh29ySyzCKs2pqk0Lk5VIiCtDTXBh3lvSMLQ2uSqPv2lFEDGPhyS0llfQEk1EFottmIdNqWLIt-jrjcdFv3NgLxMPIbzwcKCti78MbJgpPG-xUMjJ8f8CbeuZr3kxVypqo5M"}/>
-                  <img alt="Roof Leak" className="w-full rounded aspect-square object-cover mt-8" src={content.sourceImage2 || "https://lh3.googleusercontent.com/aida-public/AB6AXuBNOM7gx88VO9_m-XkZtYCzWCPF1czhQheuvjBrRiIBuQCcCX2bzwYwASyQtR7ucoELDg0w-zjz9Yk8YOQ33MMm_ZPohC6MXLSOBEwPEMHW167topd16szhliItRX48zzo4jFjQ15qZZpj_NUsTD2Zbp-iOurTFIqo-l1fmR3Q6Q5NaNZOyKgzSwuHGdCPY5AMxM82WaFkt1g_gCRt_hY8sCcWRnLhc5TtLO47X9wR9VELOB2aoGJeOVI2kRHCLIbdV01vFdECFLfSB"}/>
+                  <img alt="Roof Leak" className="w-full rounded aspect-square object-cover" src={content.sourceImage2 || "https://lh3.googleusercontent.com/aida-public/AB6AXuBNOM7gx88VO9_m-XkZtYCzWCPF1czhQheuvjBrRiIBuQCcCX2bzwYwASyQtR7ucoELDg0w-zjz9Yk8YOQ33MMm_ZPohC6MXLSOBEwPEMHW167topd16szhliItRX48zzo4jFjQ15qZZpj_NUsTD2Zbp-iOurTFIqo-l1fmR3Q6Q5NaNZOyKgzSwuHGdCPY5AMxM82WaFkt1g_gCRt_hY8sCcWRnLhc5TtLO47X9wR9VELOB2aoGJeOVI2kRHCLIbdV01vFdECFLfSB"}/>
                 </div>
               </div>
               <div className="order-1 md:order-2 reveal">
