@@ -5,7 +5,8 @@ import ServiceAreaSection from '../components/ServiceAreaSection';
 
 // EmailJS credentials — replace these with your own from https://dashboard.emailjs.com
 const EMAILJS_SERVICE_ID = 'service_e1ugpf3';
-const EMAILJS_TEMPLATE_ID = 'template_r2i68b6';
+const EMAILJS_TEMPLATE_ID = 'template_r2i68b6'; // notification to DryState
+const EMAILJS_CONFIRMATION_TEMPLATE_ID = 'template_gbktqm8'; // auto-reply to the customer
 const EMAILJS_PUBLIC_KEY = 'oy9zG3K10fg8umT6L';
 
 const Contact = () => {
@@ -22,6 +23,14 @@ const Contact = () => {
         publicKey: EMAILJS_PUBLIC_KEY,
       })
       .then(() => {
+        // Fire-and-forget confirmation email to the customer. Read the form
+        // (sendForm serializes synchronously) BEFORE resetting it below.
+        emailjs
+          .sendForm(EMAILJS_SERVICE_ID, EMAILJS_CONFIRMATION_TEMPLATE_ID, formRef.current, {
+            publicKey: EMAILJS_PUBLIC_KEY,
+          })
+          .catch((err) => console.error('EmailJS confirmation error:', err));
+
         setStatus('success');
         formRef.current?.reset();
       })
