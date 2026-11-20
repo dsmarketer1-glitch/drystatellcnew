@@ -287,6 +287,14 @@ export const locations = [
       'DeSoto’s family neighborhoods face the full range of North Texas risks, from burst pipes to severe storms. Our certified crews respond around the clock.',
   },
   {
+    slug: 'cedar-hill',
+    name: 'Cedar Hill',
+    county: 'Dallas County',
+    tier: 'primary',
+    blurb:
+      'Set in the hills above Joe Pool Lake, Cedar Hill sees strong storm and wind exposure alongside the usual aging-home plumbing risks. DryState responds fast with certified water, fire, and storm restoration.',
+  },
+  {
     slug: 'richland-hills',
     name: 'Richland Hills',
     county: 'Tarrant County',

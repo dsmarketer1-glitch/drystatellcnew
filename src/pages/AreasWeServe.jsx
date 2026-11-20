@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { getCity, locations } from '../data/locations';
-import ServiceAreaSection from '../components/ServiceAreaSection';
 
 // Renders a city name as a link to its dedicated page when one exists,
 // otherwise as plain text.
@@ -139,43 +138,31 @@ const AreasWeServe = () => {
         </div>
       </section>
 
-      {/* Service Areas by Region */}
-      <ServiceAreaSection bg="bg-white" />
-
       {/* Location Pages Directory */}
       <section className="py-16 md:py-24 bg-[#f8f9fa] reveal border-t border-slate-200">
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="text-center mb-12 md:mb-16">
-            <span className="text-[#b6171e] text-[11px] md:text-[12px] font-bold tracking-[0.2em] uppercase mb-4 block">EXPLORE BY LOCATION</span>
-            <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-4 leading-[1.2]">Dedicated Restoration Pages Near You</h2>
-            <p className="text-[16px] md:text-[18px] text-[#44464f] max-w-2xl mx-auto">Find rapid-response water, fire, and storm damage restoration for your specific city or neighborhood.</p>
+            <span className="text-[#b6171e] text-[11px] md:text-[12px] font-bold tracking-[0.2em] uppercase mb-4 block">EXPLORE OUR SERVICE AREAS</span>
+            <h2 className="text-[28px] md:text-[36px] font-['Work_Sans'] font-bold text-[#00123d] mb-4 leading-[1.2]">Trusted Water, Fire &amp; Storm Damage Restoration Near You</h2>
+            <p className="text-[16px] md:text-[18px] text-[#44464f] max-w-3xl mx-auto leading-[1.7]">Discover professional restoration services in your city. DryState provides 24/7 emergency response for water damage restoration, fire damage cleanup, and storm damage recovery. Explore the communities we serve and find reliable restoration solutions to help protect your property and restore your peace of mind.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {locations.map((city) => (
-              <div key={city.slug} className="bg-white p-6 md:p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <Link
-                  to={`/${city.slug}`}
-                  className="flex items-center justify-between mb-3 group no-underline"
-                >
-                  <h3 className="text-[18px] md:text-[20px] font-['Work_Sans'] font-bold text-[#00123d] group-hover:text-[#b6171e] transition-colors">{city.name}</h3>
-                  <span className="material-symbols-outlined text-[#b6171e] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                </Link>
-                {city.communities && city.communities.length > 0 ? (
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {city.communities.map((c) => (
-                      <Link
-                        key={c.slug}
-                        to={`/${city.slug}/${c.slug}`}
-                        className="text-[12px] font-bold text-[#44464f] bg-[#f8f9fa] border border-slate-200 hover:border-[#00123d] hover:text-[#00123d] px-3 py-1.5 rounded-full transition-all no-underline"
-                      >
-                        {c.name}
-                      </Link>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-[13px] text-[#757681] font-bold uppercase tracking-wider">{city.county}</p>
-                )}
-              </div>
+              <Link
+                key={city.slug}
+                to={`/${city.slug}`}
+                className="group bg-white p-5 md:p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-[#00123d]/30 transition-all no-underline"
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="material-symbols-outlined text-[#b6171e] text-[20px]" style={{ fontVariationSettings: "'FILL' 0" }}>location_on</span>
+                  <h3 className="text-[16px] md:text-[17px] font-['Work_Sans'] font-bold text-[#00123d] group-hover:text-[#b6171e] transition-colors">{city.name}, TX</h3>
+                </div>
+                <p className="text-[13px] md:text-[14px] text-[#44464f] leading-[1.6]">
+                  {city.slug === 'richland-hills'
+                    ? 'Home to our Richland Hills headquarters — full 24/7 restoration coverage.'
+                    : `Fast, reliable water, fire & storm damage restoration for ${city.name} homeowners.`}
+                </p>
+              </Link>
             ))}
           </div>
         </div>
